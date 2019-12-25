@@ -1,0 +1,30 @@
+ .header_area {
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 00px;
+    background-color: #13072c;
+}
+
+
+/*body {
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+}*/
+.dorne-footer-area{
+
+
+    background-color: #13072c;
+}
+
+
+
+
