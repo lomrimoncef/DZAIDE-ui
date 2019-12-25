@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -85,9 +85,95 @@
                         <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
                     </div>
                     <!-- Signin btn -->
+
+                    @guest
+
                     <div class="dorne-signin-btn">
-                        <a href="">Sign in  or Register</a>
+                        <a href="{{ route('login') }}">Sign in </a>
+
                     </div>
+                            @if (Route::has('register'))
+                    <div class="dorne-signin-btn">
+                        <a href="{{ route('register') }}">Register</a>
+                    </div>
+                        @endif
+
+                @else
+
+
+                    <!--Dropdown primary-->
+                        <div class="dropdown">
+
+
+
+
+
+
+
+                            <!--Trigger-->
+
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"> {{ Auth::user()->name }}</button>
+
+
+
+
+
+
+
+
+
+
+                            <!--Menu-->
+                            <div class="dropdown-menu dropdown-primary dropdown-menu-right">
+
+
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                > Profile</a>
+
+
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> Logout</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <!--/Dropdown primary-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                @endguest
+
+
+
+
+
+
+
+
+
                     <!-- Add listings btn -->
 
                 </div>
@@ -178,15 +264,7 @@
 <!-- Custom scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
-<script  type="text/javascript">
 
-
-    // Material Select Initialization
-    $(document).ready(function() {
-        $('.mdb-select').materialSelect();
-    });
-
-</script>
 
 
 

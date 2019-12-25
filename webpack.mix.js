@@ -16,6 +16,7 @@ mix.js('resources/js/app.js', 'public/js')
 
 
 
+
 mix.styles([
     'public/mdb-pro_4.8.10/css/bootstrap.min.css',
     'public/css/style.css',

@@ -1,100 +1,214 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Core Stylesheet -->
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+</head>
 
-            .position-ref {
-                position: relative;
-            }
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="dorne-load"></div>
+</div>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+<!-- ***** Search Form Area ***** -->
+<div class="dorne-search-form d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="search-close-btn" id="closeBtn">
+                    <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                </div>
+                <form action="#" method="get">
+                    <input type="search" name="caviarSearch" id="search" placeholder="Search Your Desire Destinations or Events">
+                    <input type="submit" class="d-none" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-            .content {
-                text-align: center;
-            }
+<!-- ***** Header Area Start ***** -->
+<header class="header_area" id="header">
 
-            .title {
-                font-size: 84px;
-            }
+    <div class="row h-100">
+        <div class="col-12 h-100">
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+            <nav class=" navbar navbar-expand-lg   nav-fill h-100 ">
+                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                <!-- Nav -->
+                <div class="collapse navbar-collapse" id="dorneNav">
+                    <ul class="navbar-nav mr-auto" id="dorneMenu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="explore.html">Explore</a>
+                                <a class="dropdown-item" href="listing.html">Listing</a>
+                                <a class="dropdown-item" href="single-listing.html">Single Listing</a>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="explore.html">Explore</a>
+                                <a class="dropdown-item" href="listing.html">Listing</a>
+                                <a class="dropdown-item" href="single-listing.html">Single Listing</a>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Search btn -->
+                    <div class="dorne-search-btn">
+                        <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                    </div>
+                    <!-- Signin btn -->
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+                    @if (Route::has('login'))
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+
+
+
+                        @auth
+                            <div class="dorne-signin-btn">
+                                <a href="{{ url('/home') }}">Home</a>
+                            </div>
+                        @else
+
+
+                            <div class="dorne-signin-btn">
+                                <a href="{{ route('login') }}">Sign in </a>
+
+                            </div>
+                            @if (Route::has('register'))
+                                <div class="dorne-signin-btn">
+                                    <a href="{{ route('register') }}">Register</a>
+                                </div>
                         @endif
                     @endauth
-                </div>
-            @endif
+                @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <!-- Add listings btn -->
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<!-- ***** Welcome Area Start ***** -->
+<section class="dorne-welcome-area " >
+
+
+    @yield('content')
+</section>
+<!-- ***** Welcome Area End ***** -->
+
+
+
+<div class="title m-b-md">
+    Laravel
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ****** Footer Area Start ****** -->
+<footer class="dorne-footer-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-md-flex align-items-center justify-content-between">
+                <div class="footer-text">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="footer-social-btns">
+                    <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</footer>
+<!-- ****** Footer Area End ****** -->
+
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap-4 js -->
+
+<!-- All Plugins js -->
+<script src="js/others/plugins.js"></script>
+<!-- Active JS -->
+<script src="js/active.js"></script>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script src="mdb-pro_4.8.10/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+
+
+
+
+</body>
+
 </html>
