@@ -1,77 +1,229 @@
-@extends('layouts.app')
-
+@extends('./layouts.cadre')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="container h-100">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
-                                @error('name')
+
+
+
+
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+                <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
+                <h1>Create an Account</h1>
+                <p class="font-italic text-muted mb-0">Create a minimal registeration page using Bootstrap 4 HTML form elements.</p>
+
+                </p>
+            </div>
+
+            <div class="col-7 col-md-7  mb-50 align-self-end ">
+                <div class="hero-content ">
+
+
+
+                    <!-- Material form register -->
+                    <div class="card">
+
+                        <h5 class="gradient-card-header blue-gradient white-text text-center py-4">
+                            <strong>Sign up</strong>
+                        </h5>
+
+                        <!--Card content-->
+                        <div class="card-body px-lg-5 pt-0 ">
+
+                            <!-- Form -->
+                            <form  class="text-center" method="POST" action="{{ route('register') }}"  style="color: #757575;">
+                                @csrf
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <!-- First name -->
+                                        <div class="md-form">
+                                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                            @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                            <label for="materialRegisterFormFirstName">First name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- Last name -->
+                                        <div class="md-form">
+                                            <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror" name="prenom" value="{{ old('prenom') }}" required autocomplete="prenom" autofocus>
+
+                                            @error('prenom')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                            <label for="materialRegisterFormLastName">Last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- E-mail -->
+                                <div class="md-form mt-0">
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                    @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
-                        </div>
+                                    @enderror
+                                    <label for="materialRegisterFormEmail">E-mail</label>
+                                </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <!-- Password -->
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <div class="form-row">
+                                    <div class="col">
 
-                                @error('email')
+                                <div class="md-form">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                    @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
-                        </div>
+                                    @enderror
+                                    <label for="materialRegisterFormPassword">Password</label>
+                                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                        At least 8 characters and 1 digit
+                                    </small>
+                                </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="md-form">
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                        <label for="materialRegisterFormPassword">Confirm Password</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- Phone number -->
+                                <div class="md-form">
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                    <input id="phone_number" type="text"  class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" pattern="^\d{10}$" required>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
+                                    @error('phone_number')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
+                                    @enderror
+
+                                    <label for="materialRegisterFormPhone">Phone number</label>
+                                    <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                                        (format: 0xxxxxxxxx)
+                                    </small>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- Newsletter -->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                                        <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
+                                    </div>
+
+                                    <!-- Sign up button -->
+                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+                                    <!-- Social register -->
+                                    <p>or sign up with:</p>
+
+                                    <a type="button" class="btn-floating btn-fb btn-sm">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-tw btn-sm">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-li btn-sm">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a type="button" class="btn-floating btn-git btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+
+                                    <hr>
+
+                                    <!-- Terms of service -->
+                                    <p>By clicking
+                                        <em>Sign up</em> you agree to our
+                                        <a href="" target="_blank">terms of service</a>
+
+                            </form>
+                            <!-- Form -->
+
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                    </div>
+                    <!-- Material form register -->
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+
+
+
                 </div>
+
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-</div>
 @endsection

@@ -22,6 +22,9 @@ Route::get('/3', function () {
 });
 
 
+Route::get('/register2', function () {
+    return view('.auth.register2');
+});
 
 
 
