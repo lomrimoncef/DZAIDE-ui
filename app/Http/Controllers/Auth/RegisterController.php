@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Events\ActivationCodeEvent;
+use App\Mail\ActivationEmail;
 use App\Providers\RouteServiceProvider;
 use App\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -29,7 +34,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -74,4 +79,52 @@ class RegisterController extends Controller
             'phone_number' => $data['phone_number'],
         ]);
     }
+
+
+
+
+
+
+    protected function registered(Request $request, $user)
+    {
+        //
+
+        // Insert code into table
+
+     $code=$user->userActivationCode()->create([
+
+            'code'=> str_random(128)
+
+        ]);
+
+        // logout the user
+
+
+        $this->guard()->logout();
+
+        // email the user
+      Mail::to($user)->send(new ActivationEmail($code));
+
+//        event(new EventName(gfhjgfh))
+
+
+
+
+
+        // redirect user
+
+        return redirect('/login');
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

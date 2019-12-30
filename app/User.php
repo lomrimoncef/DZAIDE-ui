@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name','prenom','email', 'password','phone_number',
+        'name','prenom','email', 'password','phone_number','active',
     ];
 
     /**
@@ -36,4 +36,37 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+
+
+
+    public function userActivationCode(){
+
+
+        return $this->hasOne(ActivationCode::class);
+
+    }
+
+
+
+    public function userIsActivated(){
+
+
+        if($this->active){
+
+            return true;
+
+        }
+
+
+        return false;
+
+    }
+
+
+
+
+
+
 }
