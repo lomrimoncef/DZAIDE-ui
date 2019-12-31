@@ -22,7 +22,7 @@
                 <div class="hero-content ">
 
 
-
+                    @include('includes.alerts')
 
                     <!-- Material form login -->
                     <div class="card">

@@ -37,5 +37,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/activate/{code}', 'ActivationController@activation');
+Route::get('/activate/{code}', 'ActivationController@activation')->name('user.activation');
+Route::get('/resend/code', 'ActivationController@coderesend')->name('code.resend');
 

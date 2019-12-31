@@ -15,7 +15,7 @@ class ActivationEmail extends Mailable
 
     public $code;
 
-   // public $url;
+    public $url;
 
     /**
      * Create a new message instance.
@@ -29,7 +29,7 @@ class ActivationEmail extends Mailable
 
         $this->code = $code;
 
-        //$this->url = route('user.activation', $this->code);
+        $this->url = route('user.activation', $this->code);
 
 
 

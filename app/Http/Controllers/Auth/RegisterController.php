@@ -103,17 +103,17 @@ class RegisterController extends Controller
         $this->guard()->logout();
 
         // email the user
-      Mail::to($user)->send(new ActivationEmail($code));
+     // Mail::to($user)->queue(new ActivationEmail($code));
 
 //        event(new EventName(gfhjgfh))
 
 
-
+        event(new ActivationCodeEvent($user));
 
 
         // redirect user
 
-        return redirect('/login');
+        return redirect('/login')->withSuccess('We sent an email to activate your account, please check within a couple minutes');;
 
     }
 
