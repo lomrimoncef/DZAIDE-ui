@@ -40,3 +40,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/activate/{code}', 'ActivationController@activation')->name('user.activation');
 Route::get('/resend/code', 'ActivationController@coderesend')->name('code.resend');
 
+
+
+
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
