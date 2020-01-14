@@ -102,7 +102,7 @@
                                 <a type="button" class="btn-floating btn-li btn-sm">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-
+                                <a href="{{ url('/auth/redirect/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
                                 <a href="{{ url('/auth/redirect/google') }}" class="btn btn-primary"><i class="fa fa-google"></i> Google</a>
 
                                 <a type="button" class="btn-floating btn-git btn-sm">
