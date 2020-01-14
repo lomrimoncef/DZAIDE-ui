@@ -93,21 +93,15 @@
 
                                 <!-- Social login -->
                                 <p>or sign in with:</p>
-                                <a type="button" class="btn-floating btn-fb btn-sm">
+                                <a type="button" class="btn-floating btn-fb btn-sm"  href="{{ url('/auth/redirect/facebook') }}">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a type="button" class="btn-floating btn-tw btn-sm">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a type="button" class="btn-floating btn-li btn-sm">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="{{ url('/auth/redirect/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
-                                <a href="{{ url('/auth/redirect/google') }}" class="btn btn-primary"><i class="fa fa-google"></i> Google</a>
 
-                                <a type="button" class="btn-floating btn-git btn-sm">
-                                    <i class="fab fa-github"></i>
+                                <a type="button" class="btn-floating btn-gle btn-sm" href="{{ url('/auth/redirect/google') }}">
+                                    <i class="fab fa-google fa-fw red-text"></i>
                                 </a>
+
+
 
                             </form>
                             <!-- Form -->
