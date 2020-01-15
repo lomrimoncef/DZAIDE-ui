@@ -81,7 +81,7 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="{{ route('3') }}">Contact</a>
                         </li>
 
 

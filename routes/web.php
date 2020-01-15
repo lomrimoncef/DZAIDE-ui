@@ -11,6 +11,12 @@
 |
 */
 
+use App\Pro;
+use App\Profession;
+use App\Service_Pro;
+use App\User;
+use App\Ville;
+
 Route::get('/', function () {
     return view('layouts.cadre');
 });
@@ -18,13 +24,28 @@ Route::get('/', function () {
 
 
 Route::get('/3', function () {
-    return view('welcome');
-});
+
+    $serv= Service_Pro::findOrFail('1');
+    $profession= Profession::findOrFail('1');
+    $pro_user=new Pro(['user_id'=>'1','nom_pro'=>'dr moncef','details'=>'izi baby']);
+
+    $serv->pros()->save( $pro_user);
+    $profession->pros()->save( $pro_user);
+
+
+})->name('3');
 
 
 Route::get('/register2', function () {
     return view('.auth.register2');
 });
+
+
+
+
+
+
+
 
 
 
@@ -45,3 +66,22 @@ Route::get('/resend/code', 'ActivationController@coderesend')->name('code.resend
 
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
