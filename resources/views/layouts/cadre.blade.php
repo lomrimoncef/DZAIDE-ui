@@ -277,7 +277,37 @@
 <!-- Custom scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
+<script type="text/javascript">// Data Picker Initialization
 
+    // Material Select Initialization
+    $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+    });
+
+
+    // Extend the default picker options for all instances.
+    $.extend($.fn.pickadate.defaults, {
+        monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+            'Novembre', 'Décembre'],
+        weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        today: 'aujourd\'hui',
+        clear: 'effacer',
+        format:'yyyy-mm-dd',
+        formatSubmit: 'yyyy-mm-dd'
+    })
+
+    // Or, pass the months and weekdays as an array for each invocation.
+    $('.datepicker').pickadate({
+        monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+            'Novembre', 'Décembre'],
+        weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        today: 'aujourd\'hui',
+        clear: 'effacer',
+        format:'yyyy-mm-dd',
+        formatSubmit: 'yyyy-mm-dd'
+    })
+
+</script>
 </body>
 
 </html>

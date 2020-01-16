@@ -84,7 +84,7 @@
                                 </div>
 
                                 <!-- Sign in button -->
-                                <button class="btn btn-outline-blue  btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                                <button  class="btn blue-gradient btn-block btn-rounded z-depth-1a" type="submit">Sign in</button>
 
                                 <!-- Register -->
                                 <p>Not a member?

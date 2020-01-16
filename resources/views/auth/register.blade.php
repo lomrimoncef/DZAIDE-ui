@@ -1,6 +1,9 @@
 @extends('./layouts.cadre')
 @section('content')
-    <div class="container h-100">
+
+
+
+    <div class="container h-100  mt-150 align-self-end">
 
 
 
@@ -9,7 +12,7 @@
 
 
 
-        <div class="row h-100 align-items-center justify-content-center">
+        <div class="row  h-100 align-items-center justify-content-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
                 <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
                 <h1>Create an Account</h1>
@@ -48,7 +51,7 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                             @enderror
-                                            <label for="materialRegisterFormFirstName">First name</label>
+                                            <label for="materialRegisterFormFirstName">Nom de famille</label>
                                         </div>
                                     </div>
                                     <div class="col">
@@ -61,22 +64,93 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                             @enderror
-                                            <label for="materialRegisterFormLastName">Last name</label>
+                                            <label for="materialRegisterFormLastName">Prénom</label>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- E-mail -->
-                                <div class="md-form mt-0">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
+
+
+                                <!-- sex & date de naissance -->
+
+
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <!-- date de naissance -->
+                                        <div class="md-form">
+                                            <div class="md-form">
+                                                <input placeholder="Date de naissance" type="text" id="date-picker-example" name="date_naissance"class="form-control datepicker">
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- sex -->
+                                        <div class="md-form">
+                                            <div>
+                                                <select class="mdb-select md-form colorful-select dropdown-primary" id="sex" name="sex" required>
+                                                    <option value="" disabled selected>Sex</option>
+                                                    <option value="1">Homme</option>
+                                                    <option value="0">Femme</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                                <!-- Email   -->
+
+
+
+                                <div class="md-form">
+
+                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                    <label for="materialLoginFormEmail">E-mail</label>
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
-                                    <label for="materialRegisterFormEmail">E-mail</label>
                                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 <!-- Password -->
 
@@ -87,6 +161,7 @@
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                     @error('password')
+
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -99,7 +174,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="md-form">
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                                        <input id="password2" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -109,6 +184,56 @@
                                     </div>
                                 </div>
                                 </div>
+
+
+
+
+
+
+                                <!-- VILLE  & adresse -->
+
+
+
+                                <div class="form-row">
+                                    <div class="col">
+                                        <!-- VILLE -->
+                                        <div class="md-form ">
+                                            <div>
+                                                <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
+                                                    <option value="" disabled selected>Ville</option>
+                                                    <option value="1">Alger</option>
+                                                    <option value="2">Oran</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <!-- adresse -->
+
+
+                                        <div class="md-form ">
+
+
+                                            <input type="text" id="adresse"  name="adresse" class="form-control"required>
+                                            <label for="form1">Adresse</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 <!-- Phone number -->
                                 <div class="md-form">
 
@@ -143,7 +268,7 @@
                                     </div>
 
                                     <!-- Sign up button -->
-                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                                    <button  class="btn blue-gradient btn-block btn-rounded z-depth-1a" type="submit">Sign in</button>
 
                                     <!-- Social register -->
                                     <p>or sign up with:</p>
