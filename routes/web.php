@@ -23,6 +23,20 @@ Route::get('/', function () {
 
 
 
+
+Route::get('/register2', function () {
+    return view('auth.multiple_register');
+});
+
+
+
+
+
+
+
+
+
+
 Route::get('/3', function () {
 
     $serv= Service_Pro::findOrFail('1');
@@ -36,9 +50,7 @@ Route::get('/3', function () {
 })->name('3');
 
 
-Route::get('/register2', function () {
-    return view('.auth.register2');
-});
+
 
 
 
