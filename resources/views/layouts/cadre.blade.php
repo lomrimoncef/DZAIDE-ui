@@ -16,9 +16,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
 
+    <style>
+        html,
+        body { height: 100%; }
+
+        body {
+            display: table;
+            width: 100%;
+        }
+
+
+</style>
+
 </head>
 
-<body>
+<body >
 <!-- Preloader -->
 <div id="preloader">
     <div class="dorne-load"></div>
@@ -42,7 +54,7 @@
 </div>
 
 <!-- ***** Header Area Start ***** -->
-<header class="header_area" id="header">
+<header class="header_area " id="header">
 
     <div class="row h-100">
         <div class="col-12 h-100">
@@ -188,7 +200,7 @@
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Welcome Area Start ***** -->
-<section class="dorne-welcome-area " >
+<section class="dorne-welcome-area  "  >
 
 
     @yield('content')
@@ -219,7 +231,7 @@
 
 
 <!-- ****** Footer Area Start ****** -->
-<footer class="dorne-footer-area mt-150">
+<footer class="dorne-footer-area  mt-150  ">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-md-flex align-items-center justify-content-between">

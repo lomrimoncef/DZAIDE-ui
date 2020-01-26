@@ -543,6 +543,93 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- VILLE  & adresse -->
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- VILLE -->
+                                            <div class="md-form ">
+                                                <div>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
+                                                        <option value="" disabled selected>Ville</option>
+                                                        <option value="1">Alger</option>
+                                                        <option value="2">Oran</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- adresse -->
+
+
+                                            <div class="md-form ">
+
+
+                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
+                                                <label for="form1">Adresse</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                    <!-- VILLE  & adresse -->
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- VILLE -->
+                                            <div class="md-form ">
+                                                <div>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
+                                                        <option value="" disabled selected>Ville</option>
+                                                        <option value="1">Alger</option>
+                                                        <option value="2">Oran</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- adresse -->
+
+
+                                            <div class="md-form ">
+
+
+                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
+                                                <label for="form1">Adresse</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
                                     <!-- Newsletter -->
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">

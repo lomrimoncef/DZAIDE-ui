@@ -1,6 +1,9 @@
 @extends('./layouts.cadre')
 @section('content')
-    <div class="container h-100">
+
+
+
+    <div class="container h-100  mt-150 align-self-end">
 
 
 
@@ -8,8 +11,7 @@
 
 
 
-
-        <div class="row h-100 align-items-center justify-content-center">
+        <div class="row  height-700  align-items-center justify-content-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
                 <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
                 <h1>Create an Account</h1>
@@ -18,21 +20,19 @@
                 </p>
             </div>
 
-            <div class="col-7 col-md-7">
+            <div class="col-7 col-md-7  mb-50  ">
                 <div class="hero-content ">
 
 
-                    @include('includes.alerts')
-
                     <!-- Material form login -->
-                    <div class="card">
+                    <div class="card ">
 
-                        <h5 class="gradient-card-header blue-gradient white-text text-center py-4">
-                            <strong>Sign in</strong>
+                        <h5 class="gradient-card-header blue-gradient white-text text-center py-4"">
+                        <strong>Sign in</strong>
                         </h5>
 
                         <!--Card content-->
-                        <div class="card-body px-lg-5 pt-0"  style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto-Thin;">
+                        <div class="card-body px-lg-5 pt-0">
 
                             <!-- Form -->
                             <form  class="text-center" method="POST" action="{{ route('login') }}" style="color: #13072c;">
