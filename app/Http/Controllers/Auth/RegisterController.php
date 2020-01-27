@@ -119,7 +119,7 @@ class RegisterController extends Controller
 
         // redirect user
 
-        return redirect('/login')->withSuccess('We sent an email to activate your account, please check within a couple minutes');;
+        return redirect('/login')->withSuccess('We sent an email to activate your account, please check within a couple minutes');
 
     }
 

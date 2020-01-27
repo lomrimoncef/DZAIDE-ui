@@ -42,9 +42,9 @@
                                     <!--Blue select-->
                                     <select id="mystuff"class="mdb-select md-form colorful-select dropdown-secondary">
                                         <option value="0">-- Choose One --</option>
-                                        <option value="opt1">House</option>
-                                        <option value="opt2">Car</option>
-                                        <option value="opt3">Bicycle</option>
+                                        <option value="opt1">Publique</option>
+                                        <option value="opt2">Professionnel</option>
+                                        <option value="opt3">Association</option>
                                     </select>
 
 
@@ -64,7 +64,7 @@
                                         <div class="col">
                                             <!-- First name -->
                                             <div class="md-form">
-                                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" >
 
                                                 @error('name')
                                                 <span class="invalid-feedback" role="alert">
@@ -332,7 +332,7 @@
                                         <div class="col">
                                             <!-- First name -->
                                             <div class="md-form">
-                                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" >
 
                                                 @error('name')
                                                 <span class="invalid-feedback" role="alert">
@@ -345,7 +345,7 @@
                                         <div class="col">
                                             <!-- Last name -->
                                             <div class="md-form">
-                                                <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror" name="prenom" value="{{ old('prenom') }}" required autocomplete="prenom" autofocus>
+                                                <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror" name="prenom" value="{{ old('prenom') }}" required autocomplete="prenom" >
 
                                                 @error('prenom')
                                                 <span class="invalid-feedback" role="alert">
@@ -411,7 +411,7 @@
                                             <div class="md-form">
 
                                                 <div class="col">
-                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" >
 
                                                     <label for="materialLoginFormEmail">E-mail</label>
                                                     @error('email')
@@ -554,17 +554,17 @@
 
 
 
-                                    <!-- VILLE  & adresse -->
+                                    <!-- Proffession   & Service -->
 
 
 
                                     <div class="form-row">
                                         <div class="col">
-                                            <!-- VILLE -->
+                                            <!-- proffession -->
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
-                                                        <option value="" disabled selected>Ville</option>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="proffession">
+                                                        <option value="" disabled selected>Proffession</option>
                                                         <option value="1">Alger</option>
                                                         <option value="2">Oran</option>
 
@@ -573,35 +573,12 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <!-- adresse -->
+                                            <!-- service -->
 
-
-                                            <div class="md-form ">
-
-
-                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
-                                                <label for="form1">Adresse</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-                                    <!-- VILLE  & adresse -->
-
-
-
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <!-- VILLE -->
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
-                                                        <option value="" disabled selected>Ville</option>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="service">
+                                                        <option value="" disabled selected>Service</option>
                                                         <option value="1">Alger</option>
                                                         <option value="2">Oran</option>
 
@@ -609,18 +586,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <!-- adresse -->
-
-
-                                            <div class="md-form ">
-
-
-                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
-                                                <label for="form1">Adresse</label>
-                                            </div>
-                                        </div>
                                     </div>
+
+
+
+
+
 
 
 

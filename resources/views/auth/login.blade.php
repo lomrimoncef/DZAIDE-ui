@@ -11,6 +11,7 @@
 
 
 
+
         <div class="row  height-700  align-items-center justify-content-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
                 <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
@@ -23,7 +24,7 @@
             <div class="col-7 col-md-7  mb-50  ">
                 <div class="hero-content ">
 
-
+                @include('includes.alerts')
                     <!-- Material form login -->
                     <div class="card ">
 
