@@ -29,6 +29,13 @@ class CreateUsersTable extends Migration
             $table->string('adresse')->nullable();
             $table->date('date_naissance')->nullable();
 
+            $table->integer('profession_id')->unsigned()->nullable()->index();
+            $table->integer('service__pros_id')->unsigned()->nullable()->index();
+
+            $table->string('nom_association')->nullable();
+            $table->integer('domaine_id')->unsigned()->nullable()->index();
+
+
 
             $table->rememberToken();
             $table->timestamps();

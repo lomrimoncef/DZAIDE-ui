@@ -197,13 +197,41 @@
                                 <div class="form-row">
                                     <div class="col">
                                         <!-- VILLE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                         <div class="md-form ">
                                             <div>
-                                                <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
-                                                    <option value="" disabled selected>Ville</option>
-                                                    <option value="1">Alger</option>
-                                                    <option value="2">Oran</option>
+                                                <select class="mdb-select md-form colorful-select dropdown-primary" name="ville" id="ville">
 
+                                                    <option value="" disabled selected>Ville</option>
+
+                                                    @foreach ($ville as $key => $value)
+                                                        <option value="{{ $key }}" >
+                                                            {{ $value }}
+                                                        </option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                         </div>

@@ -4,15 +4,20 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Service_Pro extends Model
+class Domaine extends Model
 {
+
     protected $fillable = [
-        'service',
+        'domaine',
     ];
 
 
 
-    public function pros(){
+
+
+
+
+    public function users(){
 
         return $this->hasMany('App\User');
 

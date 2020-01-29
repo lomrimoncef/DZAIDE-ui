@@ -180,7 +180,7 @@
                                             <div class="md-form">
                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                                                @error('password')
+                                                @error('password1')
 
                                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -194,8 +194,8 @@
                                         </div>
                                         <div class="col">
                                             <div class="md-form">
-                                                <input id="password2" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
-                                                @error('password')
+                                                <input id="password_confirmation" type="password" class="form-control @error('password_confirmation1') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                                                @error('password_confirmation1')
                                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -219,11 +219,15 @@
                                             <!-- VILLE -->
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
-                                                        <option value="" disabled selected>Ville</option>
-                                                        <option value="1">Alger</option>
-                                                        <option value="2">Oran</option>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="ville" id="ville">
 
+                                                        <option value="" disabled selected>Ville</option>
+
+                                                        @foreach ($ville as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
@@ -235,7 +239,7 @@
                                             <div class="md-form ">
 
 
-                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
+                                                <input type="text" id="adresse"  name="adresse" class="form-control" required>
                                                 <label for="form1">Adresse</label>
                                             </div>
                                         </div>
@@ -517,11 +521,15 @@
                                             <!-- VILLE -->
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="ville">
-                                                        <option value="" disabled selected>Ville</option>
-                                                        <option value="1">Alger</option>
-                                                        <option value="2">Oran</option>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="ville" id="ville">
 
+                                                        <option value="" disabled selected>Ville</option>
+
+                                                        @foreach ($ville as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
@@ -563,12 +571,26 @@
                                             <!-- proffession -->
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="proffession">
-                                                        <option value="" disabled selected>Proffession</option>
-                                                        <option value="1">Alger</option>
-                                                        <option value="2">Oran</option>
 
+
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="profession" id="profession">
+
+                                                        <option value="" disabled selected>Profession</option>
+
+                                                        @foreach ($profession as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
                                                     </select>
+
+
+
+
+
+
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -577,12 +599,23 @@
 
                                             <div class="md-form ">
                                                 <div>
-                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="service">
-                                                        <option value="" disabled selected>Service</option>
-                                                        <option value="1">Alger</option>
-                                                        <option value="2">Oran</option>
 
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="service" id="service">
+
+                                                        <option value="" disabled selected>Service</option>
+
+                                                        @foreach ($service as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
                                                     </select>
+
+
+
+
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -645,7 +678,330 @@
 
 
                             <div class="mystaff_hide mystaff_opt3">
-                                some content to show on option Bicycle selected
+                                <form  class="text-center " method="POST" action="{{ route('register') }}"  style="color: #757575;">
+                                    @csrf
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- First name -->
+                                            <div class="md-form">
+                                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" >
+
+                                                @error('name')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+                                                <label for="materialRegisterFormFirstName">Nom de famille</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- Last name -->
+                                            <div class="md-form">
+                                                <input id="prenom" type="text" class="form-control @error('prenom') is-invalid @enderror" name="prenom" value="{{ old('prenom') }}" required autocomplete="prenom" >
+
+                                                @error('prenom')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+                                                <label for="materialRegisterFormLastName">Prénom</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- sex & date de naissance -->
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- date de naissance -->
+                                            <div class="md-form">
+                                                <div class="md-form">
+                                                    <input placeholder="Date de naissance" type="text" id="date-picker-example" name="date_naissance"class="form-control datepicker">
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- sex -->
+                                            <div class="md-form">
+                                                <div>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" id="sex" name="sex" required>
+                                                        <option value="" disabled selected>Sex</option>
+                                                        <option value="1">Homme</option>
+                                                        <option value="0">Femme</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+                                    <!-- Email && Phone number   -->
+
+
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+
+                                            <div class="md-form">
+
+                                                <div class="col">
+                                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" >
+
+                                                    <label for="materialLoginFormEmail">E-mail</label>
+                                                    @error('email')
+                                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                    @enderror
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+
+
+                                            <div class="md-form">
+
+                                                <input id="phone_number" type="text"  class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" pattern="^\d{10}$" required>
+
+                                                @error('phone_number')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+
+                                                <label for="materialLoginFormEmail">Phone number</label>
+                                                <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                                                    (format: 0xxxxxxxxx)
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- Password -->
+
+                                    <div class="form-row">
+                                        <div class="col">
+
+                                            <div class="md-form">
+                                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                                @error('password')
+
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+                                                <label for="materialRegisterFormPassword">Password</label>
+                                                <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                                    At least 8 characters and 1 digit
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="md-form">
+                                                <input id="password2" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                                                @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+                                                <label for="materialRegisterFormPassword">Confirm Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                    <!-- VILLE  & adresse -->
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- VILLE -->
+                                            <div class="md-form ">
+                                                <div>
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="ville" id="ville">
+
+                                                        <option value="" disabled selected>Ville</option>
+
+                                                        @foreach ($ville as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!-- adresse -->
+
+
+                                            <div class="md-form ">
+
+
+                                                <input type="text" id="adresse"  name="adresse" class="form-control"required>
+                                                <label for="form1">Adresse</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- Nom_association   & Service -->
+
+
+
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <!-- Nom_association  -->
+                                            <div class="md-form">
+                                                <input id="nom_association" type="text" class="form-control @error('nom_association') is-invalid @enderror" name="nom_association" value="{{ old('nom_association') }}" required autocomplete="nom_association" >
+
+                                                @error('nom_association')
+                                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                                @enderror
+                                                <label for="materialRegisterFormFirstName">Nom de l'association</label>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="col">
+                                            <!-- service -->
+
+                                            <div class="md-form ">
+                                                <div>
+
+                                                    <select class="mdb-select md-form colorful-select dropdown-primary" name="domaine" id="domaine">
+
+                                                        <option value="" disabled selected>Domaine d'activité</option>
+
+                                                        @foreach ($domaine as $key => $value)
+                                                            <option value="{{ $key }}" >
+                                                                {{ $value }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- Newsletter -->
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                                        <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
+                                    </div>
+
+                                    <!-- Sign up button -->
+                                    <button  class="btn blue-gradient btn-block btn-rounded z-depth-1a" type="submit">Sign in</button>
+
+                                    <!-- Social register -->
+                                    <p>or sign up with:</p>
+
+                                    <a type="button" class="btn-floating btn-fb btn-sm"  href="{{ url('/auth/redirect/facebook') }}">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+
+                                    <a type="button" class="btn-floating btn-gle btn-sm" href="{{ url('/auth/redirect/google') }}">
+                                        <i class="fab fa-google fa-fw red-text"></i>
+                                    </a>
+
+
+
+                                    <hr>
+
+                                    <!-- Terms of service -->
+                                    <p>By clicking
+                                        <em>Sign up</em> you agree to our
+                                        <a href="" target="_blank">terms of service</a>
+
+                                </form>
                             </div>
 
 

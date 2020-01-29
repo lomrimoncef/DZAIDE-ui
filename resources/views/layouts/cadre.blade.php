@@ -109,7 +109,7 @@
                     </div>
                             @if (Route::has('register'))
                     <div class="dorne-signin-btn">
-                        <a href="{{ route('register') }}">Inscription</a>
+                        <a href="{{ route('register3') }}">Inscription</a>
                     </div>
                         @endif
 

@@ -11,6 +11,7 @@
 |
 */
 
+use App\Domaine;
 use App\Pro;
 use App\Profession;
 use App\Service_Pro;
@@ -50,12 +51,17 @@ Route::get('/3', function () {
 })->name('3');
 
 
+Route::get('/register3', function () {
 
 
+    $ville = Ville::pluck('ville', 'id');
+    $service = Service_Pro::pluck('service', 'id');
+    $profession = Profession::pluck('profession', 'id');
+    $domaine = Domaine::pluck('domaine', 'id');
+    return view('auth.multiple_register', compact('ville','service','profession','domaine'));
 
 
-
-
+})->name('register3');
 
 
 
