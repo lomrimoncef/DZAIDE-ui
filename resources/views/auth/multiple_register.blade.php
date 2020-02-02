@@ -1,9 +1,8 @@
 @extends('./layouts.cadre')
 @section('content')
 
-
-
-    <div class="container h-100  mt-150 align-self-end">
+    <section class="dorne-welcome-area  "  >
+    <div class="container h-100   align-self-end">
 
 
 
@@ -25,14 +24,14 @@
 
 
                     <!-- Material form login -->
-                    <div class="card ">
+                    <div class="card z-depth-4 rounded ">
 
                         <h5 class="gradient-card-header blue-gradient white-text text-center py-4"">
                         <strong>Sign in</strong>
                         </h5>
 
                         <!--Card content-->
-                        <div class="card-body px-lg-5 pt-0">
+                        <div class="card-body px-lg-5 pt-0 ">
 
                             <!-- Form -->
                             <form class="text-center" style="color: #757575;" action="#!">
@@ -1076,4 +1075,5 @@
 
 
     </div>
+    </section>
 @endsection

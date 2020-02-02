@@ -26,7 +26,7 @@
 
                 @include('includes.alerts')
                     <!-- Material form login -->
-                    <div class="card ">
+                    <div class="card z-depth-4 rounded ">
 
                         <h5 class="gradient-card-header blue-gradient white-text text-center py-4"">
                         <strong>Sign in</strong>
