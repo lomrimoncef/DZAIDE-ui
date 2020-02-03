@@ -15,6 +15,10 @@
     <link href="css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
+
+
+
+
     <style>
         html,
         body { height: 100%;
@@ -62,10 +66,7 @@ height: 50px;
 <body  background="img/fondblanc.jpg"    >
 
 <div id="wrapper">
-<!-- Preloader -->
-<div id="preloader">
-    <div class="dorne-load"></div>
-</div>
+
 
 <!-- ***** Search Form Area ***** -->
 <div class="dorne-search-form d-flex align-items-center">
@@ -323,16 +324,6 @@ height: 50px;
 
 
 
-<!-- jQuery-2.2.4 js -->
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="js/bootstrap/popper.min.js"></script>
-<!-- Bootstrap-4 js -->
-
-<!-- All Plugins js -->
-<script src="js/others/plugins.js"></script>
-<!-- Active JS -->
-<script src="js/active.js"></script>
 
 
 <!-- SCRIPTS -->
@@ -345,7 +336,36 @@ height: 50px;
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
 <!-- Custom scripts -->
-<script src="vendor/jquery/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+
+
+    //add collapse to all tags hiden and showed by select mystuff
+    $('.mystaff_hide').addClass('collapse');
+
+    //on change hide all divs linked to select and show only linked to selected option
+    $('#mystuff').change(function(){
+        //Saves in a variable the wanted div
+        var selector = '.mystaff_' + $(this).val();
+
+        //hide all elements
+        $('.mystaff_hide').collapse('hide');
+
+        //show only element connected to selected option
+        $(selector).collapse('show');
+    });
+
+</script>
+
+
+
+
+
+
+
 
 <script type="text/javascript">// Data Picker Initialization
 
@@ -378,24 +398,6 @@ height: 50px;
     })
 
 </script>
-<script type="text/javascript">
 
-
-    //add collapse to all tags hiden and showed by select mystuff
-    $('.mystaff_hide').addClass('collapse');
-
-    //on change hide all divs linked to select and show only linked to selected option
-    $('#mystuff').change(function(){
-        //Saves in a variable the wanted div
-        var selector = '.mystaff_' + $(this).val();
-
-        //hide all elements
-        $('.mystaff_hide').collapse('hide');
-
-        //show only element connected to selected option
-        $(selector).collapse('show');
-    });
-
-</script>
 </body>
 </html>

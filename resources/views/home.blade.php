@@ -1,4 +1,4 @@
-@extends('layouts.cadre_ancien.php')
+@extends('./layouts.cadre')
 
 @section('content')
 

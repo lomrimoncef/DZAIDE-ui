@@ -38,7 +38,13 @@
 
 
 
-    <div class="container h-100  mt-150 align-self-end">
+    <div class="container  ">
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 
 
 
@@ -46,71 +52,57 @@
 
 
 
-        <div class="row  height-700  align-items-center justify-content-center">
-            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-                <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
-                <h1>Create an Account</h1>
-                <p class="font-italic text-muted mb-0">Create a minimal registeration page using Bootstrap 4 HTML form elements.</p>
-
-                </p>
-            </div>
-
-            <div class="col-7 col-md-7  mb-50  ">
-
-
+            <div class="col-12 col-md-12    ">
 
 
                 <!-- Card Regular -->
-                <div class="card card-cascade">
+                <div class="card card-cascade  view-cascade " >
 
-                    <!-- Card image -->
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
+
+                    <h5 class="card-header info-color white-text text-center py-4">
+                        <strong>Recherche</strong>
+                    </h5>
 
                     <!-- Card content -->
-                    <div class="card-body card-body-cascade text-center">
+                    <div class="card-body" style="">
 
-                        <!-- Title -->
-                        <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-                        <!-- Subtitle -->
-                        <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
-                            Facere modi sunt, quod quibusdam.
-                        </p>
 
-                        <!-- Facebook -->
-                        <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
-                        <!-- Twitter -->
-                        <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
-                        <!-- Google + -->
-                        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
+                        <div class=" input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                                   aria-describedby="MaterialButton-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-md btn-secondary btn-rounded m-0 px-3" type="button" id="MaterialButton-addon2">Recherche</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
 
                     </div>
 
-                    <!-- Card footer -->
-                    <div class="card-footer text-muted text-center">
-                        2 days ago
-                    </div>
+
 
                 </div>
                 <!-- Card Regular -->
 
-
-
-
-
-
-
-
-
-
-
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
 
@@ -130,60 +122,94 @@
 
 
 
-        <div class="row  height-700  align-items-center justify-content-center">
-            <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-                <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
-                <h1>Create an Account</h1>
-                <p class="font-italic text-muted mb-0">Create a minimal registeration page using Bootstrap 4 HTML form elements.</p>
 
-                </p>
+
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+
+            <div class="col-2 col-md-2   ">
             </div>
 
-            <div class="col-7 col-md-7  mb-50  ">
 
 
+            <div class="col-8 col-md-8    ">
 
 
                 <!-- Card Regular -->
-                <div class="card card-cascade">
+                <div class="card card-cascade  view-cascade " >
 
                     <!-- Card image -->
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap">
-                        <a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
+                    <!-- Card image -->
+
+
+                    <!-- Button -->
+                    <a class="btn-floating btn-action ml-auto mr-4 mdb-color deep-purple darken-4accent-4"><i
+                                class="fas  fa-info "></i></a>
 
                     <!-- Card content -->
-                    <div class="card-body card-body-cascade text-center">
+                    <div class="card-body" style="">
 
                         <!-- Title -->
-                        <h4 class="card-title"><strong>Billy Coleman</strong></h4>
-                        <!-- Subtitle -->
-                        <h6 class="font-weight-bold indigo-text py-2">Web developer</h6>
+                        <h4 class="card-title">Titre Activite</h4>
+                        <hr>
                         <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae.
-                            Facere modi sunt, quod quibusdam.
-                        </p>
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left" style="height:230px;width:230px; margin-right:35px;">
 
-                        <!-- Facebook -->
-                        <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
-                        <!-- Twitter -->
-                        <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
-                        <!-- Google + -->
-                        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Type Activite :</b> Dons de sang</li>
+                            </ul>
+
+
+                        </blockquote>
 
                     </div>
 
                     <!-- Card footer -->
-                    <div class="card-footer text-muted text-center">
-                        2 days ago
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
                     </div>
 
                 </div>
                 <!-- Card Regular -->
 
+            </div>
 
 
 
@@ -193,12 +219,516 @@
 
 
 
+
+
+
+
+
+        </div>
+
+        <hr style="background-color: #4285f4; ">
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+
+            <div class="col-2 col-md-2   ">
+            </div>
+
+
+
+            <div class="col-8 col-md-8     ">
+
+
+                <!-- Card Regular -->
+                <div class="card card-cascade   z-depth-4 rounded" style="  border-style: solid;
+  border-width: 1px;" >
+
+                    <!-- Card image -->
+                    <!-- Card image -->
+
+
+
+
+                    <!-- Card content -->
+                    <div class="card-body" >
+
+                        <!-- Title -->
+
+                        <!-- Text -->
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left"  alt="thumbnail" style="height:280px;width:230px; margin-right:35px; margin-top: 00px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <button class="btn btn-outline-secondary btn-rounded waves-effect float-top float-md-right" ><i class="fas fa-plus mr-1"></i> Details</button>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="fas fa-hands-helping pr-1 "></i><b>Type Activite :</b> Dons de sang</li>
+
+                            </ul>
+
+
+                        </blockquote>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Card Regular -->
 
             </div>
+
+
+
+
         </div>
 
 
 
+
+
+
+
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+            <div class="col-2 col-md-2   ">
+            </div>
+
+
+
+            <div class="col-8 col-md-8    ">
+
+
+                <!-- Card Regular -->
+                <div class="card card-cascade  view-cascade " >
+
+                    <!-- Card image -->
+                    <!-- Card image -->
+
+
+                    <!-- Button -->
+                    <a class="btn-floating btn-action ml-auto mr-4 mdb-color deep-purple darken-4accent-4"><i
+                                class="fas  fa-info "></i></a>
+
+                    <!-- Card content -->
+                    <div class="card-body" style="">
+
+                        <!-- Title -->
+
+                        <!-- Text -->
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left" style="height:230px;width:230px; margin-right:35px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Type Activite :</b> Dons de sang</li>
+                            </ul>
+
+
+                        </blockquote>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Card Regular -->
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <hr style="background-color: #4285f4; ">
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+
+            <div class="col-2 col-md-2   ">
+            </div>
+
+
+
+            <div class="col-8 col-md-8     ">
+
+
+                <!-- Card Regular -->
+                <div class="card card-cascade   z-depth-4 rounded" style="  border-style: solid;
+  border-width: 1px;" >
+
+                    <!-- Card image -->
+                    <!-- Card image -->
+
+
+
+
+                    <!-- Card content -->
+                    <div class="card-body" >
+
+                        <!-- Title -->
+
+                        <!-- Text -->
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left"  alt="thumbnail" style="height:280px;width:230px; margin-right:35px; margin-top: 00px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <button class="btn btn-outline-secondary btn-rounded waves-effect float-top float-md-right" ><i class="fas fa-plus mr-1"></i> Details</button>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="fas fa-hands-helping pr-1 "></i><b>Type Activite :</b> Dons de sang</li>
+
+                            </ul>
+
+
+                        </blockquote>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Card Regular -->
+
+            </div>
+
+
+
+
+        </div>
+
+        <hr style="background-color: #4285f4; ">
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+
+            <div class="col-2 col-md-2   ">
+            </div>
+
+
+
+            <div class="col-8 col-md-8     ">
+
+
+                <!-- Card Regular -->
+                <div class="card card-cascade   z-depth-4 rounded" style="  border-style: solid;
+  border-width: 1px;" >
+
+                    <!-- Card image -->
+                    <!-- Card image -->
+
+
+
+
+                    <!-- Card content -->
+                    <div class="card-body" >
+
+                        <!-- Title -->
+
+                        <!-- Text -->
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left"  alt="thumbnail" style="height:280px;width:230px; margin-right:35px; margin-top: 00px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <button class="btn btn-outline-secondary btn-rounded waves-effect float-top float-md-right" ><i class="fas fa-plus mr-1"></i> Details</button>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="fas fa-hands-helping pr-1 "></i><b>Type Activite :</b> Dons de sang</li>
+
+                            </ul>
+
+
+                        </blockquote>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Card Regular -->
+
+            </div>
+
+
+
+
+        </div>
+
+        <hr style="background-color: #4285f4; ">
+
+
+
+
+
+        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+
+            <div class="col-2 col-md-2   ">
+            </div>
+
+
+
+            <div class="col-8 col-md-8     ">
+
+
+                <!-- Card Regular -->
+                <div class="card card-cascade   z-depth-4 rounded" style="  border-style: solid;
+  border-width: 1px;" >
+
+                    <!-- Card image -->
+                    <!-- Card image -->
+
+
+
+
+                    <!-- Card content -->
+                    <div class="card-body" >
+
+                        <!-- Title -->
+
+                        <!-- Text -->
+                        <img src="img/icone/24604.png" class="img-thumbnail  float-left"  alt="thumbnail" style="height:280px;width:230px; margin-right:35px; margin-top: 00px">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                            <h4 class="card-title">Titre Activite</h4>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                                ome quick example t
+                            </p>
+
+
+                            <ul class="list-unstyled list-inline font-small" >
+                                <button class="btn btn-outline-secondary btn-rounded waves-effect float-top float-md-right" ><i class="fas fa-plus mr-1"></i> Details</button>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+                                <li class="list-inline-item pr-2 red-text"><i class="fas fa-hands-helping pr-1 "></i><b>Type Activite :</b> Dons de sang</li>
+
+                            </ul>
+
+
+                        </blockquote>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer color-block blue-gradient  text-center" >
+                        <ul class="list-unstyled list-inline font-small">
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+                            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
+                                            class="far fa-comments pr-1"></i>12</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Card Regular -->
+
+            </div>
+
+
+
+
+        </div>
+
+        <hr style="background-color: #4285f4; ">
 
 
 
