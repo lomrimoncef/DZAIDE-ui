@@ -26,6 +26,9 @@ Route::get('/register2', function () {
     return view('.auth.register2');
 });
 
+Route::get('/index', function () {
+    return view('front-end.acceuil');
+})->name('index');
 
 
 

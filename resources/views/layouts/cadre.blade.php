@@ -12,8 +12,12 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
+    <link href="css/mdbootstrap.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    @yield('head')
+    
 
 
 </head>
@@ -57,7 +61,7 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services </a>
                             <div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="index.html">Demande</a>
                                 <a class="dropdown-item" href="explore.html">Proposition</a>
@@ -65,7 +69,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                                 <a class="dropdown-item" href="index.html">Demande</a>
                                 <a class="dropdown-item" href="explore.html">Proposition</a>
@@ -74,110 +78,51 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Activités Association</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Services Professionnels</a>
                         </li>
-
-
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-
-
-
                     </ul>
 
 
                     @guest
 
-                    <div class="dorne-signin-btn">
-                        <a href="{{ route('login') }}">Connexion</a>
-
-                    </div>
-                            @if (Route::has('register'))
-                    <div class="dorne-signin-btn">
-                        <a href="{{ route('register') }}">Inscription</a>
-                    </div>
-                        @endif
-
-                @else
-
-
-                    <!--Dropdown primary-->
-                        <div class="dropdown">
-
-
-
-
-
-
-
-                            <!--Trigger-->
-
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false"> {{ Auth::user()->name }}</button>
-
-
-
-
-
-
-
-
-
-
-                            <!--Menu-->
-                            <div class="dropdown-menu dropdown-primary dropdown-menu-right">
-
-
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                > Profile</a>
-
-
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"> Logout</a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-
-
-
-
-
-
-
-
-
-                            </div>
+                        <div class="dorne-signin-btn">
+                            <a href="{{ route('login') }}">Connexion</a>
                         </div>
+                                @if (Route::has('register'))
+                                    <div class="dorne-signin-btn">
+                                        <a href="{{ route('register') }}">Inscription</a>
+                                    </div>
+                                @endif
+
+                        @else
+
+
+                        <!--Dropdown primary-->
+                            <div class="dropdown">
+                                <!--Trigger-->
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"> {{ Auth::user()->name }}</button>
+                                <!--Menu-->
+                                <div class="dropdown-menu dropdown-primary dropdown-menu-right">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"> Profile</a>
+                                    
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"> Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </div>
                         <!--/Dropdown primary-->
+                    @endguest
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                @endguest
-
-
-
-
-
-
-
-
-
-                    <!-- Add listings btn -->
+                <!-- Add listings btn -->
 
                 </div>
             </nav>
@@ -188,36 +133,15 @@
 <!-- ***** Header Area End ***** -->
 
 <!-- ***** Welcome Area Start ***** -->
-<section class="dorne-welcome-area " >
+
 
 
     @yield('content')
-</section>
+
+
+    
+
 <!-- ***** Welcome Area End ***** -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ****** Footer Area Start ****** -->
 <footer class="dorne-footer-area">
     <div class="container-fluid">
@@ -231,11 +155,24 @@
                     </p>
                 </div>
                 <div class="footer-social-btns">
+                        <a type="button" class="btn-floating btn-fb btn-sm">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-tw btn-sm">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-li btn-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-git btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!--
                     <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
                     <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" ></i></a>-->
                 </div>
             </div>
         </div>
@@ -251,20 +188,6 @@
 
 
 
-
-
-<!-- jQuery-2.2.4 js -->
-<script src="js/jquery/jquery-2.2.4.min.js"></script>
-<!-- Popper js -->
-<script src="js/bootstrap/popper.min.js"></script>
-<!-- Bootstrap-4 js -->
-
-<!-- All Plugins js -->
-<script src="js/others/plugins.js"></script>
-<!-- Active JS -->
-<script src="js/active.js"></script>
-
-
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script src="mdb-pro_4.8.10/js/jquery-3.4.1.min.js"></script>
@@ -274,8 +197,21 @@
 <script type="text/javascript" src="mdb-pro_4.8.10/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
-<!-- Custom scripts -->
-<script src="vendor/jquery/jquery.min.js"></script>
+ 
+
+
+<!-- jQuery-2.2.4 js -->
+<!--<script src="js/jquery/jquery-2.2.4.min.js"></script>-->
+<!-- Popper js -->
+<!--<script src="js/bootstrap/popper.min.js"></script>-->
+<!-- Bootstrap-4 js -->
+
+<!-- All Plugins js -->
+@yield('js')
+<!-- Active JS -->
+<script src="js/active.js"></script>
+
+
 
 
 </body>

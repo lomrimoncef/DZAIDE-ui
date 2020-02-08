@@ -1,14 +1,8 @@
 @extends('./layouts.cadre')
+
 @section('content')
+<section class="dorne-welcome-area " >
     <div class="container h-100">
-
-
-
-
-
-
-
-
         <div class="row h-100 align-items-center justify-content-center">
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
                 <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
@@ -122,46 +116,9 @@
 
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+</section>
 @endsection
+
+
+
