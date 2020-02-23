@@ -1,38 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @extends('./layouts.cadre')
 @section('content')
 
@@ -44,15 +10,100 @@
 
 
 
-        <div class="row wow fadeIn  mb-50  mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+        <div class="row wow fadeIn    mt-50" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+
+
+
+            <div class="col-12 col-sm-3    ">
+
+
+
+            <div class="card card-cascade  view-cascade " >
+
+
+                <h5 class="card-header info-color white-text text-center py-4">
+                    <strong>Filter</strong>
+                </h5>
+
+                <!-- Card content -->
+                <div class="card-body" style="">
+
+
+                    <form  class="text-center " method="POST" action="{{ route('register') }}"  style="color: #757575;">
+                    @csrf
+
+                        <div class="form-row">
+                            <div class="col">
+                                <!-- First name -->
+                                <div class="md-form">
+                                    <div>
+                                        <select class="mdb-select md-form colorful-select dropdown-success" id="sex" name="sex" required>
+                                            <option value="" disabled selected>Domaine</option>
+                                            <option value="1">Homme</option>
+                                            <option value="0">Femme</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="col">
+                                <!-- First name -->
+                                <div class="md-form">
+                                    <div>
+                                        <select class="mdb-select md-form colorful-select dropdown-success" id="sex" name="sex" required>
+                                            <option value="" disabled selected>Type Activité</option>
+                                            <option value="1">Homme</option>
+                                            <option value="0">Femme</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="col">
+                                <!-- First name -->
+                                <div class="md-form">
+                                    <div>
+                                        <select class="mdb-select md-form colorful-select dropdown-success" id="sex" name="sex" required>
+                                            <option value="" disabled selected>Wilaya</option>
+                                            <option value="1">Homme</option>
+                                            <option value="0">Femme</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+</form>
+
+                </div>
+
+
+
+            </div>
+
+
+</div>
 
 
 
 
 
 
-
-            <div class="col-12 col-md-12    ">
+            <div class="col-12 col-sm-9   ">
 
 
                 <!-- Card Regular -->
@@ -67,6 +118,9 @@
                     <div class="card-body" style="">
 
 
+
+
+
                         <div class=" input-group mb-3">
                             <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
                                    aria-describedby="MaterialButton-addon2">
@@ -78,6 +132,20 @@
 
 
 
+                            <select class="mdb-select md-form colorful-select dropdown-success" id="sex" name="sex" required>
+                                <option value="" disabled selected>Trier par :</option>
+                                <option value="1">Activités récentes</option>
+                                <option value="2">Wilaya d'actvité</option>
+                                <option value="3">df</option>
+
+                            </select>
+
+
+
+
+
+
+
 
 
 
@@ -117,6 +185,8 @@
 
 
 
+        <div class="jumbotron jumbotron-fluid mt-15">
+            <div class="container">
 
 
 
@@ -134,16 +204,15 @@
 
 
 
-            <div class="col-2 col-md-2   ">
-            </div>
 
+            <div class="col-12 col-lg-2  "></div>
 
-
-            <div class="col-8 col-md-8    ">
+            <div class="col-12 col-lg-8    ">
 
 
                 <!-- Card Regular -->
-                <div class="card card-cascade  view-cascade " >
+                <div class="card card-cascade  view-cascade z-depth-4 rounded"   style="  border-style: solid;
+                border-width: 1px;" >
 
                     <!-- Card image -->
                     <!-- Card image -->
@@ -154,13 +223,20 @@
                                 class="fas  fa-info "></i></a>
 
                     <!-- Card content -->
-                    <div class="card-body" style="">
-
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col-4 col-md-4 align-self-start  ">
                         <!-- Title -->
-                        <h4 class="card-title">Titre Activite</h4>
+                        <h4 class="card-title">Titre Activite  <span class="counter">22</span></h4>
                         <hr>
                         <!-- Text -->
-                        <img src="img/icone/24604.png" class="img-thumbnail  float-left" style="height:230px;width:230px; margin-right:35px;">
+
+
+
+
+                        <img src="img/icone/2.jpg" class="img-thumbnail  " alt="responsive" style="height: 240px;width: 300px;" >
+
+                        </div>
 
 
 
@@ -169,51 +245,77 @@
 
 
 
+                        <div class="col-8 col-xs-8  ">
 
 
-
-
-
-                        <blockquote class="blockquote bq-primary" style="margin-left:250px;">
+                        <blockquote class="blockquote bq-primary align-self-start">
                             <h4 class="card-title">Titre Activite</h4>
                             <hr>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                                 content.
-                                ome quick example text to build on the card title and make up the bulk of the card's
+
+                                me quick example text to build on the card title and make up the bulk of the card's
                                 content.
-                                ome quick example t
-                            </p>
+                                me quick example text to build on the card title and make up the bulk of the card's
+                                content.
 
-
-                            <ul class="list-unstyled list-inline font-small" >
+                            <ul class="list-unstyled list-inline font-small   "  >
+                                <button class="btn btn-outline-secondary btn-rounded waves-effect  float-md-right" ><i class="fas fa-plus mr-1"></i> Details</button>
                                 <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Début activité le :</b> 05/10/2015</li>
                                 <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Fin activite le :</b> 05/10/2015</li>
+
                                 <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Type Activite :</b> Dons de sang</li>
+
+
+
+
+
+
+
+                                    <li class="list-inline-item pr-2 red-text"><i class="far fa-clock pr-1"></i><b>Rating :</b>     <span id="rateMe4"  class="feedback black-text "> </span></li>
+
+
+
+
+
+
+
+
+
+
+
                             </ul>
 
 
                         </blockquote>
 
-                    </div>
 
                     <!-- Card footer -->
-                    <div class="card-footer color-block blue-gradient  text-center" >
+
+                    <div class="card-footer color-block blue-gradient  text-center " >
                         <ul class="list-unstyled list-inline font-small">
-                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs le : 05/10/2015</li>
+
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs </li>
+                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/10/2015</li>
                             <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
                                             class="far fa-comments pr-1"></i>12</a></li>
 
                         </ul>
                     </div>
 
+
+                        </div>
+
+                        </div>
+
+
+
                 </div>
                 <!-- Card Regular -->
 
             </div>
 
-
-
-
+            </div>
 
 
 
@@ -741,6 +843,8 @@
 
 
 
+</div>
+        </div>
 
 
 

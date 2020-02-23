@@ -12,10 +12,12 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
+    <!-- Core Stylesheet -->
+    <link href="css/mdbootstrap.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-
+    @yield('head')
 
 
 
@@ -55,7 +57,6 @@ height: 50px;
     position: absolute;
     bottom: 0;
 }
-
 
 
 
@@ -323,7 +324,8 @@ height: 50px;
 
 
 
-
+@yield('js')
+<!-- Active JS -->
 
 
 <!-- SCRIPTS -->
@@ -335,7 +337,23 @@ height: 50px;
 <script type="text/javascript" src="mdb-pro_4.8.10/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
-<!-- Custom scripts -->
+
+<script src="js/others/plugins.js"></script>
+<script src="js/active.js"></script>
+
+
+<!-- rating.js file -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/addons/rating.js"></script>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,6 +391,14 @@ height: 50px;
     $(document).ready(function() {
         $('.mdb-select').materialSelect();
     });
+
+
+    // Rating Initialization
+    $(document).ready(function() {
+        $('#rateMe4').mdbRate();
+    });
+
+
 
 
     // Extend the default picker options for all instances.

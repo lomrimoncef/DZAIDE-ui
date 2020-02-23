@@ -66,12 +66,12 @@
 
     var $window = $(window);
 
-    // Sticky Active JS
-    $window.on('scroll', function () {
+    // mysticky Active JS
+   $window.on('scroll', function () {
         if ($window.scrollTop() > 0) {
-            $('body').addClass('sticky');
+            $('body').addClass('mysticky');
         } else {
-            $('body').removeClass('sticky');
+            $('body').removeClass('mysticky');
         }
     });
 

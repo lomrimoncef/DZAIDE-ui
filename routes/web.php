@@ -34,10 +34,6 @@ Route::get('/register2', function () {
 
 
 
-
-
-
-
 Route::get('/3', function () {
 
     $serv= Service_Pro::findOrFail('1');
@@ -129,6 +125,13 @@ Route::get('/activite', function () {
 })->name('activite');
 
 
+
+
+
+
+Route::get('/index', function () {
+    return view('front-end.acceuil');
+})->name('index');
 
 
 
