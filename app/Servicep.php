@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Service_Pro extends Model
+class Servicep extends Model
 {
     protected $fillable = [
         'service',
@@ -12,12 +12,12 @@ class Service_Pro extends Model
 
 
 
-    public function pros(){
+    public function users()
+    {
 
         return $this->hasMany('App\User');
-
+    }
 
 
 
     }
-}

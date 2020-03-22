@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateServiceProsTable extends Migration
+class CreateActiviteUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateServiceProsTable extends Migration
      */
     public function up()
     {
-        Schema::create('service__pros', function (Blueprint $table) {
+        Schema::create('activite_user', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('service');
+            $table->integer('user_id')->unsigned()->nullable()->index();
+            $table->integer('activite_id')->unsigned()->nullable()->index();
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateServiceProsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('service__pros');
+        Schema::dropIfExists('activite_user');
     }
 }

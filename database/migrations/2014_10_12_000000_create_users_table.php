@@ -25,12 +25,12 @@ class CreateUsersTable extends Migration
             $table->integer('phone_number')->nullable();
             $table->boolean('active')->default(false);
             $table->integer('ville_id')->unsigned()->nullable()->index();
-            $table->boolean('sex')->nullable();;
+            $table->boolean('sex')->nullable();
             $table->string('adresse')->nullable();
             $table->date('date_naissance')->nullable();
 
             $table->integer('profession_id')->unsigned()->nullable()->index();
-            $table->integer('service__pros_id')->unsigned()->nullable()->index();
+            $table->integer('servicep_id')->unsigned()->nullable()->index();
 
             $table->string('nom_association')->nullable();
             $table->integer('domaine_id')->unsigned()->nullable()->index();

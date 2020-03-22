@@ -13,12 +13,9 @@ class Profession extends Model
 
 
 
-    public function pros(){
+    public function users(){
 
         return $this->hasMany('App\User');
-
-
-
 
     }
 

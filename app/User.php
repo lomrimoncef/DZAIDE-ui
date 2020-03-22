@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name','prenom','email', 'password','phone_number','active','provider', 'provider_id','ville_id','sex', 'adresse','date_naissance','profession_id','service__pros_id','nom_association','domaine_id',
+        'name','prenom','email', 'password','phone_number','active','provider', 'provider_id','ville_id','sex', 'adresse','date_naissance','profession_id','servicep_id','nom_association','domaine_id',
     ];
 
     /**
@@ -67,6 +67,38 @@ class User extends Authenticatable
 
 
 
+    public function activites(){
 
+        return $this->hasMany('App\Activite');
+    }
+
+
+    public function ville(){
+
+        return $this->belongsTo('App\Ville');
+    }
+
+    public function profession(){
+
+        return $this->belongsTo('App\Profession');
+
+    }
+
+    public function servicep(){
+
+        return $this->belongsTo('App\Servicep');
+
+    }
+
+    public function domaine(){
+
+        return $this->belongsTo('App\Domaine');
+
+    }
+
+    public function interesser(){
+
+        return $this->belongsToMany('App\Activite');
+    }
 
 }

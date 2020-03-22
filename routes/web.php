@@ -135,3 +135,9 @@ Route::get('/index', function () {
 
 
 
+Route::get('/act', function () {
+    $user=User::find(1);
+    $act=new Activite(['titre_activite'=>'niquage de fils de pute']);
+    $user->interesser()->save($act);
+
+})->name('act');

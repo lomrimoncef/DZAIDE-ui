@@ -431,7 +431,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col col-6 mb-4 wow fadeInUpBig " data-wow-delay="1.4s">
+                            <div class="col col-6 mb-4 wow fadeInUpBig " data-wow-delay="1s">
                                 <!-- Card Wider -->
                                 <div class="card h-100 card-cascade wider">
 
@@ -455,7 +455,7 @@
                                 </div>
                                 <!-- Card Wider -->
                             </div>
-                            <div class="col col-6 mb-4 wow fadeInUpBig " data-wow-delay="1.6s">
+                            <div class="col col-6 mb-4 wow fadeInUpBig " data-wow-delay="1s">
                                 <!-- Card Wider -->
                                 <div class="card h-100 card-cascade wider">
 
@@ -482,7 +482,7 @@
 
                             <div class="col col-md-6 mb-4">
                                 <!-- Card Wider -->
-                                <div class="card h-100 card-cascade wider wow fadeInUpBig " data-wow-delay="1.8s">
+                                <div class="card h-100 card-cascade wider wow fadeInUpBig " data-wow-delay="1.2s">
 
                                     <!-- Card image -->
                                     <div class="view view-cascade overlay">
