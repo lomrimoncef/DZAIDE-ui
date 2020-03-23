@@ -11,10 +11,13 @@
 |
 */
 
+use App\Activite;
+use App\Annonce;
 use App\Domaine;
 use App\Pro;
 use App\Profession;
 use App\Service_Pro;
+use App\Servicep;
 use App\User;
 use App\Ville;
 
@@ -36,7 +39,7 @@ Route::get('/register2', function () {
 
 Route::get('/3', function () {
 
-    $serv= Service_Pro::findOrFail('1');
+    $serv= Servicep::findOrFail('1');
     $profession= Profession::findOrFail('1');
     $pro_user=new Pro(['user_id'=>'1','nom_pro'=>'dr moncef','details'=>'izi baby']);
 
@@ -102,7 +105,7 @@ Route::get('/register3', function () {
 
 
     $ville = Ville::pluck('ville', 'id');
-    $service = Service_Pro::pluck('service', 'id');
+    $service = Servicep::pluck('service', 'id');
     $profession = Profession::pluck('profession', 'id');
     $domaine = Domaine::pluck('domaine', 'id');
     return view('auth.multiple_register', compact('ville','service','profession','domaine'));
@@ -133,11 +136,25 @@ Route::get('/index', function () {
     return view('front-end.acceuil');
 })->name('index');
 
-
+//test relation any to many ***************************************
 
 Route::get('/act', function () {
     $user=User::find(1);
-    $act=new Activite(['titre_activite'=>'niquage de fils de pute']);
-    $user->interesser()->save($act);
+    $act= Activite::find(1);
+    $user->interesser()->save($act,['like' => '1','commentaire' => 'izi','date_commentaire' => '2020-03-23']);
 
 })->name('act');
+
+
+Route::get('/ann', function () {
+    $user=User::find(1);
+    $act=Annonce::find(1);
+    $user->repondre()->save($act,['note' => '100']) ;
+
+})->name('ann');
+
+
+
+
+
+// fin test ********************************************************

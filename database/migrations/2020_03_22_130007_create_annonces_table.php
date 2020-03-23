@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateActivitesTable extends Migration
+class CreateAnnoncesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,20 @@ class CreateActivitesTable extends Migration
      */
     public function up()
     {
-        Schema::create('activites', function (Blueprint $table) {
+        Schema::create('annonces', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titre_activite')->nullable();
+
+
+            $table->string('titre')->nullable();
             $table->string('details')->nullable();
-            $table->date('date_debut')->nullable();
-            $table->date('date_fin')->nullable();
-            $table->boolean('publier')->default(false);
+            $table->date('date_annonce')->nullable();
             $table->date('date_publication')->nullable();
+            $table->boolean('publier')->default(false);
+            $table->boolean('traiter')->default(false);
+            $table->date('date_traitement')->nullable();
             $table->string('valider_par')->nullable();
-            $table->integer('user_id')->unsigned()->nullable()->index();
-            $table->integer('typeact_id')->unsigned()->nullable()->index();
-            $table->integer('domaine_id')->unsigned()->nullable()->index();
+            $table->integer('catannonce_id')->unsigned()->nullable()->index();
+
 
             $table->timestamps();
         });
@@ -37,6 +39,6 @@ class CreateActivitesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('activites');
+        Schema::dropIfExists('annonces');
     }
 }

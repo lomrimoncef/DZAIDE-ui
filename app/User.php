@@ -98,7 +98,25 @@ class User extends Authenticatable
 
     public function interesser(){
 
-        return $this->belongsToMany('App\Activite');
+        return $this->belongsToMany('App\Activite')   ->withPivot('like')
+            ->withPivot('commentaire')
+            ->withPivot('date_commentaire')
+            ->withTimestamps();
+
     }
+
+
+    public function repondre(){
+
+        return $this->belongsToMany('App\Annonce')
+        ->withPivot('note')
+            ->withTimestamps();
+    }
+
+
+
+
+
+
 
 }

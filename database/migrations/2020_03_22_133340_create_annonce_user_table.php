@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateActiviteUserTable extends Migration
+class CreateAnnonceUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,14 @@ class CreateActiviteUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('activite_user', function (Blueprint $table) {
+        Schema::create('annonce_user', function (Blueprint $table) {
             $table->increments('id');
-
-            $table->integer('activite_id')->unsigned()->nullable()->index();
-
             $table->integer('user_id')->unsigned()->nullable()->index();
-
-            $table->boolean('like')->default(false);
-            $table->string('commentaire')->nullable();
-            $table->date('date_commentaire')->nullable();
-
-
-
+            $table->integer('annonce_id')->unsigned()->nullable()->index();
+            $table->date('date_reponse')->nullable();
+            $table->string('traiteur')->nullable();
+            $table->string('avis')->nullable();
+            $table->integer('note')->nullable();
             $table->timestamps();
         });
     }
@@ -37,6 +32,6 @@ class CreateActiviteUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('activite_user');
+        Schema::dropIfExists('annonce_user');
     }
 }

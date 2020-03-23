@@ -24,5 +24,4 @@ class Activite extends Model
 
 
 
-
 }

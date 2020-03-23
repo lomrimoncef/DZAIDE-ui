@@ -4,33 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Domaine extends Model
+class Badge extends Model
 {
-
     protected $fillable = [
-        'domaine',
+        'avatar','lib_badge','catbadge_id',
     ];
-
-
-
-
-
 
 
     public function users(){
 
         return $this->hasMany('App\User');
-    }
-
-
-    public function activites(){
-
-        return $this->hasMany('App\Activite');
-
-
-
 
     }
+
 
 
 

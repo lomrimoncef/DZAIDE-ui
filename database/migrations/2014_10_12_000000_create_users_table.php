@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->integer('phone_number')->nullable();
             $table->boolean('active')->default(false);
             $table->integer('ville_id')->unsigned()->nullable()->index();
+            $table->integer('badge_id')->unsigned()->nullable()->index();
             $table->boolean('sex')->nullable();
             $table->string('adresse')->nullable();
             $table->date('date_naissance')->nullable();
