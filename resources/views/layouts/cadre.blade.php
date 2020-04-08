@@ -16,12 +16,17 @@
     <link href="css/mdbootstrap.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
+    <link href="css/main.css" rel="stylesheet" />
     @yield('head')
 
 
 
     <style>
+
+
+
+
+
         html,
         body { height: 100%;
 

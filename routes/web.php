@@ -128,8 +128,23 @@ Route::get('/activite', function () {
 })->name('activite');
 
 
+Route::get('/activite2', function () {
+    return view('association.index2');
+})->name('activite2');
 
 
+
+Route::get('list', 'ActivitesController@index')->name('list');;
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|Page home
+|--------------------------------------------------------------------------
+*/
 
 
 Route::get('/index', function () {
