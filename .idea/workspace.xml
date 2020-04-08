@@ -2,17 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="141ee34d-8be5-4bba-8c87-420f6ce3d79f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ActivitesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/association/index2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/association/test.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/semantic-ui.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/simple-default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/bg-img/annonces.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/bg-img/images.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/bg-img/mybg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/Transport.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/adm-info.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/arriere-plan-negociation-affaires.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/autres1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/autres2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/autres3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/bricolage.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/bénévolat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/conversation-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/conversation-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/conversation-3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/dons-prets.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/ensemble-isometrique-benevolat-charite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/ensemble-isometrique-benevoles-personnes-s-occupant-sans-abri-personnes-agees-malades-service-communautaire-social.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/ensemble-volontaires.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/handshake.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/homme-pensee-dessin-anime-.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/mains-adulte-enfant-tenant-coeur.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/sante.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/services-pro.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/download-img/talk.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/front-end/annonces.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/association/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/association/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/acceuil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/acceuil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/cadre.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cadre.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -42,20 +60,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index2.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index2.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/association/index2.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="75">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2750">
-              <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
+            <state relative-caret-position="-200">
+              <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,8 +126,8 @@
       <file leaf-file-name="cadre.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/cadre.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="575">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -535,11 +553,12 @@
       <workItem from="1586158999911" duration="1687000" />
       <workItem from="1586200386591" duration="1760000" />
       <workItem from="1586366956297" duration="2276000" />
+      <workItem from="1586370735379" duration="1696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192597000" />
+    <option name="totallyTimeSpent" value="194293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -551,21 +570,21 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4989339" visible="true" weight="0.42234638" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Maven" order="5" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -826,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2750">
-          <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ActivitesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -851,15 +863,22 @@
     <entry file="file://$PROJECT_DIR$/public/css/main.css" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/cadre.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="575">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/association/index2.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="75">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
         </state>
       </provider>
     </entry>

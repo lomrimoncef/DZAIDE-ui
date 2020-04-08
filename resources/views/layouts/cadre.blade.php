@@ -12,10 +12,15 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
+<<<<<<< HEAD
     <!-- Core Stylesheet -->
+=======
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
     <link href="css/mdbootstrap.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<<<<<<< HEAD
     <link href="css/main.css" rel="stylesheet" />
     @yield('head')
 
@@ -38,6 +43,10 @@
 
         }
 
+=======
+    @yield('head')
+    
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
         #wrapper{
             min-height: 100%;
@@ -94,6 +103,7 @@ height: 50px;
 
     <div id="header">
 
+<<<<<<< HEAD
 
         <header class="header_area " >
 
@@ -136,9 +146,46 @@ height: 50px;
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('3') }}">Contact</a>
                                 </li>
+=======
+            <nav class=" navbar navbar-expand-lg   nav-fill h-100 ">
+                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+                <!-- Nav -->
+                <div class="collapse navbar-collapse" id="dorneNav">
+                    <ul class="navbar-nav mr-auto" id="dorneMenu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services </a>
+                            <div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html">Demande</a>
+                                <a class="dropdown-item" href="explore.html">Proposition</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="index.html">Demande</a>
+                                <a class="dropdown-item" href="explore.html">Proposition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Activités Association</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Services Professionnels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
 
 
+<<<<<<< HEAD
                             </ul>
 
 
@@ -153,10 +200,21 @@ height: 50px;
                                         <a href="{{ route('register3') }}">Inscription</a>
                                     </div>
                             @endif
+=======
+                        <div class="dorne-signin-btn">
+                            <a href="{{ route('login') }}">Connexion</a>
+                        </div>
+                                @if (Route::has('register'))
+                                    <div class="dorne-signin-btn">
+                                        <a href="{{ route('register') }}">Inscription</a>
+                                    </div>
+                                @endif
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
                         @else
 
 
+<<<<<<< HEAD
                             <!--Dropdown primary-->
                                 <div class="dropdown">
 
@@ -231,6 +289,30 @@ height: 50px;
 
 
                         <!-- Add listings btn -->
+=======
+                        <!--Dropdown primary-->
+                            <div class="dropdown">
+                                <!--Trigger-->
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"> {{ Auth::user()->name }}</button>
+                                <!--Menu-->
+                                <div class="dropdown-menu dropdown-primary dropdown-menu-right">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"> Profile</a>
+                                    
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"> Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </div>
+                        <!--/Dropdown primary-->
+                    @endguest
+
+                <!-- Add listings btn -->
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
                         </div>
                     </nav>
@@ -247,6 +329,7 @@ height: 50px;
 
     </div>
 
+<<<<<<< HEAD
 
 
 
@@ -274,9 +357,18 @@ height: 50px;
 
 
         <!-- ***** Welcome Area End ***** -->
+=======
+<!-- ***** Welcome Area Start ***** -->
 
 
 
+    @yield('content')
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
+
+
+    
+
+<<<<<<< HEAD
 
 
 
@@ -304,6 +396,40 @@ height: 50px;
                         <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
                         <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
                     </div>
+=======
+<!-- ***** Welcome Area End ***** -->
+<!-- ****** Footer Area Start ****** -->
+<footer class="dorne-footer-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-md-flex align-items-center justify-content-between">
+                <div class="footer-text">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+                <div class="footer-social-btns">
+                        <a type="button" class="btn-floating btn-fb btn-sm">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-tw btn-sm">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-li btn-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a type="button" class="btn-floating btn-git btn-sm">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!--
+                    <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook" ></i></a>-->
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
                 </div>
             </div>
         </div>
@@ -320,8 +446,19 @@ height: 50px;
 
 
 
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script src="mdb-pro_4.8.10/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
+ 
 
 
+<<<<<<< HEAD
 
 
 
@@ -329,10 +466,20 @@ height: 50px;
 
 
 
+=======
+<!-- jQuery-2.2.4 js -->
+<!--<script src="js/jquery/jquery-2.2.4.min.js"></script>-->
+<!-- Popper js -->
+<!--<script src="js/bootstrap/popper.min.js"></script>-->
+<!-- Bootstrap-4 js -->
+
+<!-- All Plugins js -->
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 @yield('js')
 <!-- Active JS -->
 
 
+<<<<<<< HEAD
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script src="mdb-pro_4.8.10/js/jquery-3.4.1.min.js"></script>
@@ -359,6 +506,8 @@ height: 50px;
 
 
 
+=======
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
 
 

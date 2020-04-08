@@ -32,6 +32,12 @@ Route::get('/register2', function () {
     return view('auth.multiple_register');
 });
 
+Route::get('/index', function () {
+    return view('front-end.acceuil');
+})->name('index');
+Route::get('/annonces', function () {
+    return view('front-end.annonces');
+})->name('annonces');
 
 
 
