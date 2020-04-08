@@ -188,6 +188,7 @@
 <script src="js/others/plugins.js"></script>
 <script type="text/javascript">
   /*---------------------- Page script-------------------------------*/
+  /* Ajuster l'image à la taille de l'écran */
       var $item = $('.dorne-welcome-area'); 
       var $wHeight = $(window).height();     
       $item.height($wHeight); 
@@ -196,6 +197,8 @@
         $wHeight = $(window).height();
         $item.height($wHeight);
       });
+
+  /**/
     </script>
 
 
