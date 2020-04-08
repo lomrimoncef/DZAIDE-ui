@@ -29,6 +29,9 @@ Route::get('/register2', function () {
 Route::get('/index', function () {
     return view('front-end.acceuil');
 })->name('index');
+Route::get('/annonces', function () {
+    return view('front-end.annonces');
+})->name('annonces');
 
 
 
