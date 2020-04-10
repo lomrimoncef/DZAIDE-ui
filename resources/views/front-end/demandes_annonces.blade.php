@@ -25,39 +25,70 @@
 
 
 <!-- ***** Comment ça marche Start ***** -->
-<section class="m-4">
+<section class="m-4 fixed-sn">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-3 z-depth-1-half deep-purple lighten-2 mb-3 p-3">
-              <div class="white-text text-center font-weight-bold"><span class="h3-responsive"> <i class="fas fa-filter"> </i> Filtres </span>
-              </div>
+           <!-- <div class="col-12 col-lg-3 z-depth-1-half deep-purple lighten-2 mb-3 p-3">
+              
 
+            </div>-->
+
+            <div class="col-12 col-lg-3  mb-3 p-3">
+              <!--Navbar-->
+              <nav class="navbar navbar-dark navbar-1 z-depth-1-half deep-purple lighten-2">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#"><i class="fas fa-filter"> </i> Filtres </a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                  aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse show" id="navbarSupportedContent15">
+
+                  <!-- Links -->
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                  </ul>
+                  <!-- Links -->
+
+                </div>
+                <!-- Collapsible content -->
+
+              </nav>
+              <!--/.Navbar-->
             </div>
+
             <div class="col-12 col-lg-9">
-            
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs md-tabs nav-justified secondary-color" role="tablist">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#panel555" role="tab">
-                              <i class="fas fa-heartbeat pr-2"></i>DEMANDES</a>
-                              
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#panel666" role="tab">
-                              <i class="fas fa-heart pr-2"></i>OFFRES</a>
-                          </li>
-                        </ul>
-                        <!-- Nav tabs -->
-                        
-                        <!-- Tab panels -->
-                        <div class="tab-content">
-                        
-                          <!-- Panel 1 -->
-                          <div class="tab-pane fade in show active" id="panel555" role="tabpanel">
-                        
-                            
+                                  <div class="about-content text-center">
+                                    
+                                    <h2 class="">Nos annonces <br></h2>
+                                 
+                                  </div>
+                                      
+                                    
+                                  <div class="card text-center mb-3">
+                                    <div class="card-body">
+                                      <div class="card-title"><h4> Recherche par mot clé </h4>   </div>
+                                      
+                                      <input class="form-control form-control-lg mr-sm-2 mb-2" type="text" placeholder="Recherche" aria-label="Search">
+                                      <button class="btn purple-gradient btn-rounded btn-md my-0" type="submit"> <i class="fa fa-search" aria-hidden="true"></i> Recherche... </button>                                      
+                                    </div>
+                                    <div class="card-body"> Nous avons trouvés <span class="red-text font-weight-bold"> 10546 </span> Résultats pour vous! </div>
+                                  </div>
+                                                             
                     
                                 <div class="row d-flex justify-content-center m-3 text-left ">
+                                    
                                     <div class="col-md-10">
                                       <div class="card">
                                         <div class="card-body m-3">
@@ -68,10 +99,13 @@
                                               </div>
                                             </div>
                                             <div class="col-lg-8">
+                                              <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                              <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
                                               <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                                 numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
-                                              <p class="font-weight-bold lead mb-2"><strong>Anna Smith</strong></p>
-                                              <p class="font-weight-bold text-muted mb-0">Product manager</p>
+
+                                                <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Nriglek!</button>
+                                              
                                             </div>
                                           </div>
                                         </div>
@@ -145,27 +179,7 @@
                                     </div>
                                   </div>
                                 </div>
-                            
-                            
-                        
-                          </div>
-                          <!-- Panel 1 -->
-                        
-                          <!-- Panel 2 -->
-                          <div class="tab-pane fade" id="panel666" role="tabpanel">
-                        
-                            <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta
-                              doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat
-                              ratione porro voluptate odit minima.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                              porro voluptate odit minima.</p>
-                        
-                          </div>
-                          <!-- Panel 2 -->
-                        
-                        </div>
-                        <!-- Tab panels -->
+                           
             </div>
                 
         </div>
@@ -199,6 +213,8 @@
       });
 
   /**/
+
+
     </script>
 
 
