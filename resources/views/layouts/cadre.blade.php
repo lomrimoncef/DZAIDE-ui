@@ -54,16 +54,16 @@
                 <!-- Nav -->
                 <div class="collapse navbar-collapse" id="dorneNav">
                     <ul class="navbar-nav mr-auto" id="dorneMenu">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item {{ Request::is('index') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ url('index') }}">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services </a>
-                            <div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
+                        <li class="nav-item  {{ Request::is('annonces') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ url('annonces') }}"> Services </a>
+                            <!--<div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="index.html">Demande</a>
                                 <a class="dropdown-item" href="explore.html">Proposition</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats</a>
@@ -75,9 +75,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Activités Association</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="contact.html">Services Professionnels</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
