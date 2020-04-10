@@ -12,73 +12,15 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-<<<<<<< HEAD
-    <!-- Core Stylesheet -->
-=======
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
     <link href="css/mdbootstrap.css" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<<<<<<< HEAD
-    <link href="css/main.css" rel="stylesheet" />
     @yield('head')
 
-
-
-    <style>
-
-
-
-
-
-        html,
-        body { height: 100%;
-
-            padding:0;
-            margin:0;
-
-            width: 100%;
-
-
-        }
-
-=======
-    @yield('head')
-    
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
-
-        #wrapper{
-            min-height: 100%;
-            position: relative;
-
-        }
-        #header{
-            height: 50px;
-            background-color: #f1ba12;
-            margin-bottom: 150px;
-
-
-        }
-        #content{padding-bottom: 200px;}
-
-#footer{
-
-    width: 100%;
-
-height: 50px;
-    background-color: #d4fc79;
-    position: absolute;
-    bottom: 0;
-}
-
-
-
-
-    </style>
 </head>
 
-<body  background="img/fondblanc.jpg"    >
+<body>
 
 <div id="wrapper">
 
@@ -100,53 +42,12 @@ height: 50px;
     </div>
 </div>
 
+<!-- ***** Header Area Start ***** -->
+<header class="header_area" id="header">
 
-    <div id="header">
+    <div class="row h-100">
+        <div class="col-12 h-100">
 
-<<<<<<< HEAD
-
-        <header class="header_area " >
-
-            <div class="row h-100">
-                <div class="col-12 h-100">
-
-                    <nav class=" navbar navbar-expand-lg   nav-fill h-100 ">
-                        <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-                        <!-- Nav -->
-                        <div class="collapse navbar-collapse" id="dorneNav">
-                            <ul class="navbar-nav mr-auto" id="dorneMenu">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu dropdown-secondary " aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.html">Demande</a>
-                                        <a class="dropdown-item" href="explore.html">Proposition</a>
-
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                        <a class="dropdown-item" href="index.html">Demande</a>
-                                        <a class="dropdown-item" href="explore.html">Proposition</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('activite') }}">Activités Association</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Services Professionnels</a>
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('3') }}">Contact</a>
-                                </li>
-=======
             <nav class=" navbar navbar-expand-lg   nav-fill h-100 ">
                 <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
@@ -181,26 +82,10 @@ height: 50px;
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
 
 
-<<<<<<< HEAD
-                            </ul>
-
-
-                            @guest
-
-                                <div class="dorne-signin-btn">
-                                    <a href="{{ route('login') }}">Connexion</a>
-
-                                </div>
-                                @if (Route::has('register'))
-                                    <div class="dorne-signin-btn">
-                                        <a href="{{ route('register3') }}">Inscription</a>
-                                    </div>
-                            @endif
-=======
+                        @guest
                         <div class="dorne-signin-btn">
                             <a href="{{ route('login') }}">Connexion</a>
                         </div>
@@ -209,87 +94,10 @@ height: 50px;
                                         <a href="{{ route('register') }}">Inscription</a>
                                     </div>
                                 @endif
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
                         @else
 
 
-<<<<<<< HEAD
-                            <!--Dropdown primary-->
-                                <div class="dropdown">
-
-
-
-
-
-
-
-                                    <!--Trigger-->
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"> {{ Auth::user()->name }}</button>
-
-
-
-
-
-
-
-
-
-
-                                    <!--Menu-->
-                                    <div class="dropdown-menu dropdown-primary dropdown-menu-right">
-
-
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                        > Profile</a>
-
-
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"> Logout</a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
-                                <!--/Dropdown primary-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        @endguest
-
-
-
-
-
-
-
-
-
-                        <!-- Add listings btn -->
-=======
                         <!--Dropdown primary-->
                             <div class="dropdown">
                                 <!--Trigger-->
@@ -312,91 +120,24 @@ height: 50px;
                     @endguest
 
                 <!-- Add listings btn -->
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
                         </div>
-                    </nav>
-                </div>
-
-            </div>
-        </header>
-
-
-
-
-
-
+            </nav>
+        </div>
 
     </div>
-
-<<<<<<< HEAD
-
+</header>
 
 
-    <div id="content">
-
-
-
-
-
-
-            @yield('content')
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-        <!-- ***** Welcome Area End ***** -->
-=======
 <!-- ***** Welcome Area Start ***** -->
 
 
 
     @yield('content')
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
 
 
     
 
-<<<<<<< HEAD
-
-
-
-        <!-- ****** Footer Area Start ****** -->
-<div id="footer">
-
-
-
-
-    <footer class="dorne-footer-area     ">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 d-md-flex align-items-center justify-content-between">
-                    <div class="footer-text">
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                    <div class="footer-social-btns">
-                        <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
-                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
-                        <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
-                    </div>
-=======
 <!-- ***** Welcome Area End ***** -->
 <!-- ****** Footer Area Start ****** -->
 <footer class="dorne-footer-area">
@@ -429,7 +170,6 @@ height: 50px;
                     <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
                     <a href="#"><i class="fa fa-facebook" ></i></a>-->
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
                 </div>
             </div>
         </div>
@@ -437,7 +177,7 @@ height: 50px;
 
 
     <!-- ****** Footer Area End ****** -->
-</div>
+
 
 
 
@@ -458,15 +198,6 @@ height: 50px;
  
 
 
-<<<<<<< HEAD
-
-
-
-</div>
-
-
-
-=======
 <!-- jQuery-2.2.4 js -->
 <!--<script src="js/jquery/jquery-2.2.4.min.js"></script>-->
 <!-- Popper js -->
@@ -474,41 +205,11 @@ height: 50px;
 <!-- Bootstrap-4 js -->
 
 <!-- All Plugins js -->
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
-@yield('js')
-<!-- Active JS -->
-
-
-<<<<<<< HEAD
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script src="mdb-pro_4.8.10/js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="mdb-pro_4.8.10/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="mdb-pro_4.8.10/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
-
 <script src="js/others/plugins.js"></script>
+<!-- Active JS -->
 <script src="js/active.js"></script>
 
-
-<!-- rating.js file -->
-<script type="text/javascript" src="mdb-pro_4.8.10/js/addons/rating.js"></script>
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
-
+@yield('js')
 
 
 

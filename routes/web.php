@@ -32,9 +32,9 @@ Route::get('/register2', function () {
     return view('auth.multiple_register');
 });
 
-Route::get('/index', function () {
+/*Route::get('/index', function () {
     return view('front-end.acceuil');
-})->name('index');
+})->name('index');*/
 Route::get('/annonces', function () {
     return view('front-end.annonces');
 })->name('annonces');
@@ -54,16 +54,6 @@ Route::get('/3', function () {
 
 
 })->name('3');
-
-
-
-
-
-
-
-
-
-
 
 
 
