@@ -24,7 +24,8 @@
 
 
 
-<!-- ***** Comment ça marche Start ***** -->
+<!-- ***** PAGE ANNONCES ***** -->
+
 <section class="m-4 fixed-sn">
     <div class="container-fluid">
         <div class="row">
@@ -35,31 +36,90 @@
 
             <div class="col-12 col-lg-3  mb-3 p-3">
               <!--Navbar-->
-              <nav class="navbar navbar-dark navbar-1 z-depth-1-half deep-purple lighten-2">
+              <nav class="navbar navbar-light navbar-1 z-depth-1-half">
 
                 <!-- Navbar brand -->
-                <a class="navbar-brand" href="#"><i class="fas fa-filter"> </i> Filtres </a>
+                <a class="navbar-brand text-secondary" href="#"><i class="fas fa-filter"> </i> Filtres </a>
 
                 <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-                  aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                  aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="text-secondary"><i class="fas fa-bars fa-1x"></i></span></button>
 
                 <!-- Collapsible content -->
-                <div class="collapse navbar-collapse show" id="navbarSupportedContent15">
+                <div class="row mt-3 collapse navbar-collapse show" id="navbarSupportedContent15">
+                  
+                  
+                    <div class="col-12 mb-3">
+                      <h5 class="text-secondary ">Par urgence :</h5>
+                      
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                        <label class="form-check-label" for="materialUnchecked">Très urgent</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="materialUnchecked1">
+                        <label class="form-check-label" for="materialUnchecked1">Urgent</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="materialUnchecked2">
+                        <label class="form-check-label" for="materialUnchecked2">Normal</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="materialUnchecked3">
+                        <label class="form-check-label" for="materialUnchecked3">Aucune urgence</label>
+                      </div>
+                      
+                    
+                    </div>
 
-                  <!-- Links -->
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                  </ul>
-                  <!-- Links -->
+                    <div class="col-12 select-outline mb-3">
+                      <h5 class="text-secondary ">Par wilaya :</h5>
+                      <select class="mdb-select md-form md-outline white colorful-select dropdown-secondary" searchable="Recherchez ici..">
+                        <option value="" disabled selected>Choisissez la Wilaya</option>
+                        <option value="1">USA</option>
+                        <option value="2">Germany</option>
+                        <option value="3">France</option>
+                        <option value="3">Poland</option>
+                        <option value="3">Japan</option>
+                      </select>
+                    
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <h5 class="text-secondary ">Par Catégories :</h5>
+                      
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie1">
+                        <label class="form-check-label" for="#Catégorie1"> #Catégorie1 </label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie2">
+                        <label class="form-check-label" for="#Catégorie2">#Catégorie2</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie3">
+                        <label class="form-check-label" for="#Catégorie3">#Catégorie3</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie4">
+                        <label class="form-check-label" for="#Catégorie4">#Catégorie4</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie5">
+                        <label class="form-check-label" for="#Catégorie5">#Catégorie5</label>
+                      </div>
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="#Catégorie6">
+                        <label class="form-check-label" for="#Catégorie6">#Catégorie6</label>
+                      </div>
+                                          
+                    </div>
+
+
+                    <div class="col-12 mb-3 mt-3 text-center">
+                      <button type="button" class="btn btn-outline-secondary btn-rounded waves-effect"><i class="fas fa-filter pr-2"> </i> Filtrer </button>
+                    </div>
+                    
 
                 </div>
                 <!-- Collapsible content -->
@@ -74,111 +134,126 @@
                                     <h2 class="">Nos annonces <br></h2>
                                  
                                   </div>
-                                      
-                                    
+                                                        
                                   <div class="card text-center mb-3">
                                     <div class="card-body">
-                                      <div class="card-title"><h4> Recherche par mot clé </h4>   </div>
+                                      <div class="card-title"><h4> Recherche par mots-clés </h4>   </div>
                                       
                                       <input class="form-control form-control-lg mr-sm-2 mb-2" type="text" placeholder="Recherche" aria-label="Search">
-                                      <button class="btn purple-gradient btn-rounded btn-md my-0" type="submit"> <i class="fa fa-search" aria-hidden="true"></i> Recherche... </button>                                      
+                                      <button class="btn purple-gradient btn-rounded btn-md my-0" type="submit"> <i class="fa fa-search" aria-hidden="true"></i> Rechercher </button>                                      
                                     </div>
                                     <div class="card-body"> Nous avons trouvés <span class="red-text font-weight-bold"> 10546 </span> Résultats pour vous! </div>
                                   </div>
-                                                             
+
+
+           <!-- -------------------------------LES CARDS ANNOOOOOOOOOOOOOOOOOOOOOOONCES ------------------------------ -->                                         
                     
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     
-                                    <div class="col-md-10">
-                                      <div class="card">
-                                        <div class="card-body m-3">
-                                          <div class="row">
-                                            <div class="col-lg-4 d-flex mb-2 align-items-center">
-                                              <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
-                                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
-                                              </div>
+                                  <div class="col-md-10">
+                                    <div class="card">
+                                      <div class="card-body m-3">
+                                        <div class="row">
+                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
                                             </div>
-                                            <div class="col-lg-8">
-                                              <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
-                                              <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
-                                              <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
-                                                numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                                          </div>
+                                          <div class="col-lg-8">
+                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
+                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                                <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Nriglek!</button>
-                                              
-                                            </div>
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center m-3 text-left ">
+                                    
+                                  <div class="col-md-10">
+                                    <div class="card">
+                                      <div class="card-body m-3">
+                                        <div class="row">
+                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
+                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center m-3 text-left ">
+                                    
+                                  <div class="col-md-10">
+                                    <div class="card">
+                                      <div class="card-body m-3">
+                                        <div class="row">
+                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
+                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row d-flex justify-content-center m-3 text-left ">
+                                    
+                                  <div class="col-md-10">
+                                    <div class="card">
+                                      <div class="card-body m-3">
+                                        <div class="row">
+                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
+                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               
 
-                                <div class="row d-flex justify-content-center m-3 text-left ">
-                                  <div class="col-md-10">
-                                    <div class="card">
-                                      <div class="card-body m-3">
-                                        <div class="row">
-                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
-                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
-                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-8">
-                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
-                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
-                                            <p class="font-weight-bold lead mb-2"><strong>Anna Smith</strong></p>
-                                            <p class="font-weight-bold text-muted mb-0">Product manager</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="row d-flex justify-content-center m-3 text-left ">
-                                  <div class="col-md-10">
-                                    <div class="card">
-                                      <div class="card-body m-3">
-                                        <div class="row">
-                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
-                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
-                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-8">
-                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
-                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
-                                            <p class="font-weight-bold lead mb-2"><strong>Anna Smith</strong></p>
-                                            <p class="font-weight-bold text-muted mb-0">Product manager</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="row d-flex justify-content-center m-3 text-left ">
-                                  <div class="col-md-10">
-                                    <div class="card">
-                                      <div class="card-body m-3">
-                                        <div class="row">
-                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
-                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
-                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-8">
-                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
-                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
-                                            <p class="font-weight-bold lead mb-2"><strong>Anna Smith</strong></p>
-                                            <p class="font-weight-bold text-muted mb-0">Product manager</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                               
                            
             </div>
                 
@@ -187,15 +262,12 @@
         <div class="row">
             <div class="col-12">
                 
-                
+                <!-- #TO DO PAGINATION -->
             </div>
         </div>
     </div>
 </section>
-<!-- ***** Comment ça marche  End ***** -->
-
-
-
+<!-- ***** PAGE ANNONCES  End ***** -->
 
 @endsection
 @section('js')
@@ -212,8 +284,10 @@
         $item.height($wHeight);
       });
 
-  /**/
-
+  /*---------------Initialisation MDB Select list---------------*/
+  $(document).ready(function() {
+    $('.mdb-select').materialSelect();
+    });
 
     </script>
 
