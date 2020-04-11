@@ -10,7 +10,7 @@
         <div class="row h-100 align-items-center justify-content-left">
             <div class="col-12 col-md-10">
                 <div class="hero-content">
-                    <h2 class="text-uppercase">Les demandes</br> d'aide</h2>
+                    <h2 class="text-uppercase">Les propositions</br> d'aide</h2>
                     
                 </div>
                 
@@ -47,30 +47,7 @@
 
                 <!-- Collapsible content -->
                 <div class="row mt-3 collapse navbar-collapse show" id="navbarSupportedContent15">
-                  
-                  
-                    <div class="col-12 mb-3">
-                      <h5 class="text-secondary ">Par urgence :</h5>
-                      
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked">
-                        <label class="form-check-label" for="materialUnchecked">Très urgent</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked1">
-                        <label class="form-check-label" for="materialUnchecked1">Urgent</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked2">
-                        <label class="form-check-label" for="materialUnchecked2">Normal</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked3">
-                        <label class="form-check-label" for="materialUnchecked3">Aucune urgence</label>
-                      </div>
-                      
-                    
-                    </div>
+                               
 
                     <div class="col-12 select-outline mb-3">
                       <h5 class="text-secondary ">Par wilaya :</h5>
@@ -131,7 +108,7 @@
             <div class="col-12 col-lg-9">
                                   <div class="about-content text-center">
                                     
-                                    <h2>Nos demandes d'aide <br></h2>
+                                    <h2 class="">Nos propositions d'aide <br></h2>
                                  
                                   </div>
                                                         
@@ -165,7 +142,7 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Riglini </button>
                                             
                                           </div>
                                         </div>
@@ -191,7 +168,32 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Riglini </button>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row d-flex justify-content-center m-3 text-left ">
+                                    
+                                  <div class="col-md-10">
+                                    <div class="card">
+                                      <div class="card-body m-3">
+                                        <div class="row">
+                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-8">
+                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
+                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Riglini </button>
                                             
                                           </div>
                                         </div>
@@ -217,7 +219,7 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Riglini </button>
                                             
                                           </div>
                                         </div>
@@ -243,7 +245,7 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>Riglini </button>
                                             
                                           </div>
                                         </div>

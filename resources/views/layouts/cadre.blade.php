@@ -62,16 +62,16 @@
                         </li>
                         <li class="nav-item dropdown {{ Request::is('demandes_annonces') ? 'active' : '' }}">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Annonces</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="{{ url('demandes_annonces') }}">Demandes</a>
-                                <a class="dropdown-item" href="explore.html">Propositions</a>
+                            <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="{{ url('demandes_annonces') }}">Demandes d'aide</a>
+                                <a class="dropdown-item" href="{{ url('propositions_annonces') }}">Propositions d'aide</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bénévolats</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index.html">Demande</a>
-                                <a class="dropdown-item" href="explore.html">Proposition</a>
+                            <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="index.html">Demandes de bénévols</a>
+                                <a class="dropdown-item" href="explore.html">Propositions de services bénévols</a>
                             </div>
                         </li>
                         <li class="nav-item">

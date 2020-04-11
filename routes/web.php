@@ -32,6 +32,9 @@ Route::get('/index', function () {
 Route::get('/demandes_annonces', function () {
     return view('front-end.demandes_annonces');
 })->name('demandes_annonces');
+Route::get('/propositions_annonces', function () {
+    return view('front-end.propositions_annonces');
+})->name('propositions_annonces');
 
 
 
