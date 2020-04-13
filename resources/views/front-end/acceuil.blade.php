@@ -104,24 +104,26 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***** Catagory Area End ***** -->
 
-    <!-- ***** About Area Start ***** -->
-    <section class="dorne-about-area section-padding-0-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="about-content text-center">
-                        <h2>Découvrez votre plateforme d'entraide <br><span>XXXX</span></h2>
-                        <p>Vous avez besoin d'aide? (dons de sang, médicaments introuvables, déménagement, cours particuliers, collecte pour association ou bénévolat, nettoyer un espace vert ou même besoin d'aide pour du bricolage) XXXX est là pour vous mettre en relation avec des personnes (particuliers, associations, professionnels…) qui sont prêtes à vous aider.</p>
-                        <!--'-->
-                        <p> Vous voulez aider et vous ne savez pas où vous dirigez? Sur XXXXX vous pouvez aussi proposer vos services pour les autres (particuliers, associations, professionnels…) afin de les aider que ça soit pour monter un meuble, donner des cours en maths, lecture pour les enfants hospitalisés, faire des dons pour une association ou participer aux bénévolats </p>
-                    </div>
+    </div>
+</section>
+<!-- ***** Catagory Area End ***** -->
+
+<!-- ***** About Area Start ***** -->
+<section class="dorne-about-area section-padding-0-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="about-content text-center">
+                    <h2>Découvrez votre plateforme d'entraide <br><span>Dz-Aide</span></h2>
+                    <p>Vous avez besoin d'aide? (dons de sang, médicaments introuvables, déménagement, cours particuliers, collecte pour association ou bénévolat, nettoyer un espace vert ou même besoin d'aide pour du bricolage) DzAide est là pour vous mettre en relation avec des personnes (particuliers, associations, professionnels…) qui sont prêtes à vous aider.</p>
+                    <!--'-->
+                    <p> Vous voulez aider et vous ne savez pas où vous dirigez? Sur DzAide vous pouvez aussi proposer vos services pour les autres (particuliers, associations, professionnels…) afin de les aider que ça soit pour monter un meuble, donner des cours en maths, lecture pour les enfants hospitalisés, faire des dons pour une association ou participer aux bénévolats </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
     <!-- ***** About Area End ***** -->
 
 
