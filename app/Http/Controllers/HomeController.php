@@ -25,4 +25,30 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+
+
+
+
+    public function consentFormListShowPDF(Request $request)
+
+    {
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

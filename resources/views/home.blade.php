@@ -1,4 +1,4 @@
-@extends('layouts.cadre')
+@extends('./layouts.cadre')
 
 @section('content')
         <section class="dorne-welcome-area " >

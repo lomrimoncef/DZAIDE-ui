@@ -17,16 +17,13 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     @yield('head')
-    
-
 
 </head>
 
 <body>
-<!-- Preloader -->
-<div id="preloader">
-    <div class="dorne-load"></div>
-</div>
+
+<div id="wrapper">
+
 
 <!-- ***** Search Form Area ***** -->
 <div class="dorne-search-form d-flex align-items-center">
@@ -86,8 +83,8 @@
                     </ul>
 
 
-                    @guest
 
+                        @guest
                         <div class="dorne-signin-btn">
                             <a href="{{ route('login') }}">Connexion</a>
                         </div>
@@ -123,13 +120,13 @@
 
                 <!-- Add listings btn -->
 
-                </div>
+                        </div>
             </nav>
         </div>
 
     </div>
 </header>
-<!-- ***** Header Area End ***** -->
+
 
 <!-- ***** Welcome Area Start ***** -->
 
@@ -175,9 +172,10 @@
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- ****** Footer Area End ****** -->
+    </footer>
+
+
+    <!-- ****** Footer Area End ****** -->
 
 
 
@@ -206,13 +204,80 @@
 <!-- Bootstrap-4 js -->
 
 <!-- All Plugins js -->
-@yield('js')
+<script src="js/others/plugins.js"></script>
 <!-- Active JS -->
 <script src="js/active.js"></script>
 
+@yield('js')
 
 
+
+<script type="text/javascript">
+
+
+    //add collapse to all tags hiden and showed by select mystuff
+    $('.mystaff_hide').addClass('collapse');
+
+    //on change hide all divs linked to select and show only linked to selected option
+    $('#mystuff').change(function(){
+        //Saves in a variable the wanted div
+        var selector = '.mystaff_' + $(this).val();
+
+        //hide all elements
+        $('.mystaff_hide').collapse('hide');
+
+        //show only element connected to selected option
+        $(selector).collapse('show');
+    });
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">// Data Picker Initialization
+
+    // Material Select Initialization
+    $(document).ready(function() {
+        $('.mdb-select').materialSelect();
+    });
+
+
+    // Rating Initialization
+    $(document).ready(function() {
+        $('#rateMe4').mdbRate();
+    });
+
+
+
+
+    // Extend the default picker options for all instances.
+    $.extend($.fn.pickadate.defaults, {
+        monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+            'Novembre', 'Décembre'],
+        weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        today: 'aujourd\'hui',
+        clear: 'effacer',
+        format:'yyyy-mm-dd',
+        formatSubmit: 'yyyy-mm-dd'
+    })
+
+    // Or, pass the months and weekdays as an array for each invocation.
+    $('.datepicker').pickadate({
+        monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+            'Novembre', 'Décembre'],
+        weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+        today: 'aujourd\'hui',
+        clear: 'effacer',
+        format:'yyyy-mm-dd',
+        formatSubmit: 'yyyy-mm-dd'
+    })
+
+</script>
 
 </body>
-
 </html>

@@ -1,9 +1,25 @@
 @extends('./layouts.cadre')
 
 @section('content')
+<<<<<<< HEAD
+
+
+
+    <div class="container h-100  mt-150 align-self-end">
+
+
+
+
+
+
+
+
+        <div class="row  height-700  align-items-center justify-content-center">
+=======
 <section class="dorne-welcome-area " >
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center">
+>>>>>>> 1da6a0610e792bcb63252bd0af2ff604b0547ef4
             <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
                 <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
                 <h1>Create an Account</h1>
@@ -12,21 +28,19 @@
                 </p>
             </div>
 
-            <div class="col-7 col-md-7">
+            <div class="col-7 col-md-7  mb-50  ">
                 <div class="hero-content ">
 
-
-                    @include('includes.alerts')
-
+                @include('includes.alerts')
                     <!-- Material form login -->
-                    <div class="card">
+                    <div class="card z-depth-4 rounded ">
 
-                        <h5 class="gradient-card-header blue-gradient white-text text-center py-4">
-                            <strong>Sign in</strong>
+                        <h5 class="gradient-card-header blue-gradient white-text text-center py-4"">
+                        <strong>Sign in</strong>
                         </h5>
 
                         <!--Card content-->
-                        <div class="card-body px-lg-5 pt-0"  style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto-Thin;">
+                        <div class="card-body px-lg-5 pt-0">
 
                             <!-- Form -->
                             <form  class="text-center" method="POST" action="{{ route('login') }}" style="color: #13072c;">
@@ -78,7 +92,7 @@
                                 </div>
 
                                 <!-- Sign in button -->
-                                <button class="btn btn-outline-blue  btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                                <button  class="btn blue-gradient btn-block btn-rounded z-depth-1a" type="submit">Sign in</button>
 
                                 <!-- Register -->
                                 <p>Not a member?
@@ -87,18 +101,15 @@
 
                                 <!-- Social login -->
                                 <p>or sign in with:</p>
-                                <a type="button" class="btn-floating btn-fb btn-sm">
+                                <a type="button" class="btn-floating btn-fb btn-sm"  href="{{ url('/auth/redirect/facebook') }}">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a type="button" class="btn-floating btn-tw btn-sm">
-                                    <i class="fab fa-twitter"></i>
+
+                                <a type="button" class="btn-floating btn-gle btn-sm" href="{{ url('/auth/redirect/google') }}">
+                                    <i class="fab fa-google fa-fw red-text"></i>
                                 </a>
-                                <a type="button" class="btn-floating btn-li btn-sm">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a type="button" class="btn-floating btn-git btn-sm">
-                                    <i class="fab fa-github"></i>
-                                </a>
+
+
 
                             </form>
                             <!-- Form -->

@@ -8,6 +8,7 @@ use App\Providers\RouteServiceProvider;
 use App\User;
 use App\Http\Controllers\Controller;
 
+use App\Ville;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -69,16 +70,103 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     protected function create(array $data)
     {
-        return User::create([
+
+        if ( isset($data['service']))  { return User::create([
             'name' => $data['name'],
             'prenom' => $data['prenom'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'phone_number' => $data['phone_number'],
-        ]);
+
+            'adresse' => $data['adresse'],
+            'sex' => $data['sex'],
+            'date_naissance' => $data['date_naissance'],
+            'ville_id' => $data['ville'],
+            'profession_id'=> $data['profession'],
+            'service__pros_id'=> $data['service'],
+
+        ]);}
+
+        if ( isset($data['nom_association']))  { return User::create([
+            'name' => $data['name'],
+            'prenom' => $data['prenom'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'phone_number' => $data['phone_number'],
+
+            'adresse' => $data['adresse'],
+            'sex' => $data['sex'],
+            'date_naissance' => $data['date_naissance'],
+            'ville_id' => $data['ville'],
+            'nom_association'=> $data['nom_association'],
+            'domaine_id'=> $data['domaine'],
+
+        ]);}
+
+
+
+
+
+
+
+
+
+
+        else { return User::create([
+            'name' => $data['name'],
+            'prenom' => $data['prenom'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'phone_number' => $data['phone_number'],
+
+            'adresse' => $data['adresse'],
+            'sex' => $data['sex'],
+            'date_naissance' => $data['date_naissance'],
+            'ville_id' => $data['ville'],
+
+        ]);}
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,7 +201,7 @@ class RegisterController extends Controller
 
         // redirect user
 
-        return redirect('/login')->withSuccess('We sent an email to activate your account, please check within a couple minutes');;
+        return redirect('/login')->withSuccess('We sent an email to activate your account, please check within a couple minutes');
 
     }
 
