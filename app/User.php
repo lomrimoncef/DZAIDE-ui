@@ -105,14 +105,18 @@ class User extends Authenticatable
 
     }
 
+// Réglage des relations après ajout de la table réponse 
 
-    public function repondre(){
+    public function annonces(){
 
-        return $this->belongsToMany('App\Annonce')
-        ->withPivot('note')
-            ->withTimestamps();
+        return $this->hasMany('App\Annonce');
     }
+    
 
+    public function reponses(){
+
+        return $this->hasMany('App\Reponse');
+    }
 
 
 

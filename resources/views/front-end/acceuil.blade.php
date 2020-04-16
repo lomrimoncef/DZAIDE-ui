@@ -520,3 +520,8 @@
 
 
 @endsection
+
+@section('js')
+
+
+@endsection

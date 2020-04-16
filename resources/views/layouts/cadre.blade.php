@@ -195,22 +195,23 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="mdb-pro_4.8.10/js/mdb.min.js"></script>
  
-
-
-<!-- jQuery-2.2.4 js -->
-<!--<script src="js/jquery/jquery-2.2.4.min.js"></script>-->
-<!-- Popper js -->
-<!--<script src="js/bootstrap/popper.min.js"></script>-->
-<!-- Bootstrap-4 js -->
-
-<!-- All Plugins js -->
 <script src="js/others/plugins.js"></script>
+<!-- All Plugins js -->
+
 <!-- Active JS -->
 <script src="js/active.js"></script>
-
 @yield('js')
 
 
+<!-- rating.js file -->
+<script type="text/javascript" src="mdb-pro_4.8.10/js/addons/rating.js"></script>
+
+
+
+
+
+
+<!--
 
 <script type="text/javascript">
 
@@ -278,6 +279,8 @@
     })
 
 </script>
+
+-->
 
 </body>
 </html>

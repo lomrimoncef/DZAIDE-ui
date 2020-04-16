@@ -75,6 +75,7 @@
                     <div class="col-12 select-outline mb-3">
                       <h5 class="text-secondary ">Par wilaya :</h5>
                       <select class="mdb-select md-form md-outline white colorful-select dropdown-secondary" searchable="Recherchez ici..">
+                        
                         <option value="" disabled selected>Choisissez la Wilaya</option>
                         <option value="1">USA</option>
                         <option value="2">Germany</option>
@@ -151,7 +152,7 @@
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     
                                   <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card purple lighten-5">
                                       <div class="card-body m-3">
                                         <div class="row">
                                           <div class="col-lg-4 d-flex mb-2 align-items-center">
@@ -165,11 +166,24 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            <ul class="list-unstyled list-inline font-small">
+              
+                                              <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
+                                              <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
+                                                class="fa fa-fist-raised pr-1"></i>130</a></li>         
+                                            </ul>                                          
                                             
                                           </div>
                                         </div>
                                       </div>
+
+                                      <div class="card-footer color-block red darken-4 text-center " >
+                                        <ul class="list-unstyled list-inline font-small">
+                                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>Trés urgent</li>
+                                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/04/2020</li>  
+                                        </ul>
+                                      </div>
+                                      
                                     </div>
                                   </div>
                                 </div>
@@ -177,7 +191,7 @@
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     
                                   <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card purple lighten-5">
                                       <div class="card-body m-3">
                                         <div class="row">
                                           <div class="col-lg-4 d-flex mb-2 align-items-center">
@@ -191,11 +205,24 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            <ul class="list-unstyled list-inline font-small">
+              
+                                              <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
+                                              <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
+                                                class="fa fa-fist-raised pr-1"></i>130</a></li>         
+                                            </ul>                                          
                                             
                                           </div>
                                         </div>
                                       </div>
+                                      
+                                      <div class="card-footer color-block orange darken-4  text-center " >
+                                        <ul class="list-unstyled list-inline font-small">
+                                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>Urgent</li>
+                                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/04/2020</li>  
+                                        </ul>
+                                      </div>
+                                      
                                     </div>
                                   </div>
                                 </div>
@@ -203,7 +230,7 @@
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     
                                   <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card purple lighten-5">
                                       <div class="card-body m-3">
                                         <div class="row">
                                           <div class="col-lg-4 d-flex mb-2 align-items-center">
@@ -217,11 +244,24 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            <ul class="list-unstyled list-inline font-small">
+              
+                                              <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
+                                              <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
+                                                class="fa fa-fist-raised pr-1"></i>130</a></li>         
+                                            </ul>                                          
                                             
                                           </div>
                                         </div>
                                       </div>
+                                      
+                                      <div class="card-footer color-block success-color-dark  text-center " >
+                                        <ul class="list-unstyled list-inline font-small">
+                                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>Normal</li>
+                                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/04/2020</li>  
+                                        </ul>
+                                      </div>
+                                      
                                     </div>
                                   </div>
                                 </div>
@@ -229,7 +269,7 @@
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     
                                   <div class="col-md-10">
-                                    <div class="card">
+                                    <div class="card purple lighten-5">
                                       <div class="card-body m-3">
                                         <div class="row">
                                           <div class="col-lg-4 d-flex mb-2 align-items-center">
@@ -243,18 +283,29 @@
                                             <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
                                               numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
 
-                                              <button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-thumbs-up pr-2"></i>N'riglek!</button>
+                                            <ul class="list-unstyled list-inline font-small">
+              
+                                              <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
+                                              <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
+                                                class="fa fa-fist-raised pr-1"></i>130</a></li>         
+                                            </ul>                                          
                                             
                                           </div>
                                         </div>
                                       </div>
+                                      
+                                      <div class="card-footer color-block secondary-color-dark  text-center " >
+                                        <ul class="list-unstyled list-inline font-small">
+                                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>Aucune Urgencet</li>
+                                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/04/2020</li>  
+                                        </ul>
+                                      </div>
+                                      
                                     </div>
                                   </div>
                                 </div>
-                              
 
                                
-                           
             </div>
                 
         </div>
@@ -271,7 +322,7 @@
 
 @endsection
 @section('js')
-<script src="js/others/plugins.js"></script>
+
 <script type="text/javascript">
   /*---------------------- Page script-------------------------------*/
   /* Ajuster l'image à la taille de l'écran */

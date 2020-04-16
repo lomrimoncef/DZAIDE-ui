@@ -35,7 +35,8 @@ Route::get('/register2', function () {
 /*Route::get('/index', function () {
     return view('front-end.acceuil');
 
-})->name('index');
+})->name('index');*/
+
 Route::get('/demandes_annonces', function () {
     return view('front-end.demandes_annonces');
 })->name('demandes_annonces');

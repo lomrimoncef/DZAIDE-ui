@@ -29,7 +29,7 @@
                 <div class="card-body" style="">
 
 
-                    <form  class="text-center " method="POST" action="{{ route('register') }}"  style="color: #757575;">
+                    <form  class="text-center " method="POST" action="{{ route('register3') }}"  style="color: #757575;">
                     @csrf
 
                         <div class="form-row">
@@ -291,7 +291,7 @@
                     <div class="card-footer color-block blue-gradient  text-center " >
                         <ul class="list-unstyled list-inline font-small">
 
-                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs </li>
+                            <li class="list-inline-item pr-2 white-text uppercase"><i class="far fa-clock pr-1"></i>Publiée par : sjsjsjs </li>
                             <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/10/2015</li>
                             <li class="list-inline-item pr-2"><a href="#" class="white-text"><i
                                             class="far fa-comments pr-1"></i>12</a></li>
