@@ -14,9 +14,6 @@ class ActivitesController extends Controller
         return view('/association.index2', compact('activites'));
 
 
-
-
-
     }
 
 }

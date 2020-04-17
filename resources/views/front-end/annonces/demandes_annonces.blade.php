@@ -52,22 +52,13 @@
                     <div class="col-12 mb-3">
                       <h5 class="text-secondary ">Par urgence :</h5>
                       
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked">
-                        <label class="form-check-label" for="materialUnchecked">Très urgent</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked1">
-                        <label class="form-check-label" for="materialUnchecked1">Urgent</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked2">
-                        <label class="form-check-label" for="materialUnchecked2">Normal</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="materialUnchecked3">
-                        <label class="form-check-label" for="materialUnchecked3">Aucune urgence</label>
-                      </div>
+                      <select class="mdb-select md-form md-outline colorful-select dropdown-secondary md-form" multiple searchable="">
+                        <option value="" disabled selected>Le niveau d'urgence</option>
+                        @foreach ($urgences as $urgence)
+                            <option value="{{ $urgence->id }}">{{ $urgence->libele }}</option>
+                        @endforeach
+                        
+                      </select>
                       
                     
                     </div>
@@ -88,31 +79,13 @@
 
                     <div class="col-12 mb-3">
                       <h5 class="text-secondary ">Par Catégories :</h5>
+                      @foreach($categories as $categorie)
+                      <div class="form-check pb-2">
+                        <input type="checkbox" class="form-check-input" id="{{ $categorie->id }}">
+                        <label class="form-check-label" for="{{ $categorie->id }}"> #{{ $categorie->categorie }} </label>
+                      </div>
+                      @endforeach
                       
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie1">
-                        <label class="form-check-label" for="#Catégorie1"> #Catégorie1 </label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie2">
-                        <label class="form-check-label" for="#Catégorie2">#Catégorie2</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie3">
-                        <label class="form-check-label" for="#Catégorie3">#Catégorie3</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie4">
-                        <label class="form-check-label" for="#Catégorie4">#Catégorie4</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie5">
-                        <label class="form-check-label" for="#Catégorie5">#Catégorie5</label>
-                      </div>
-                      <div class="form-check pb-2">
-                        <input type="checkbox" class="form-check-input" id="#Catégorie6">
-                        <label class="form-check-label" for="#Catégorie6">#Catégorie6</label>
-                      </div>
                                           
                     </div>
 
@@ -148,45 +121,66 @@
 
 
            <!-- -------------------------------LES CARDS ANNOOOOOOOOOOOOOOOOOOOOOOONCES ------------------------------ -->                                         
-                    
-                                <div class="row d-flex justify-content-center m-3 text-left ">
-                                    
-                                  <div class="col-md-10">
-                                    <div class="card purple lighten-5">
-                                      <div class="card-body m-3">
-                                        <div class="row">
-                                          <div class="col-lg-4 d-flex mb-2 align-items-center">
-                                            <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
-                                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-8">
-                                            <p><label class="font-weight-bold lead"><strong>Anna Smith |</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
-                                            <p class="font-weight-bold text-muted mb-2">#Catégories, #Catégories, #Catégories </p> 
-                                            <p class="text-muted font-weight-light mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
-                                              numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                                  @foreach ($annonces as $annonce)
 
-                                            <ul class="list-unstyled list-inline font-small">
-              
-                                              <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
-                                              <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
-                                                class="fa fa-fist-raised pr-1"></i>130</a></li>         
-                                            </ul>                                          
+                                      <div class="row d-flex justify-content-center m-3 text-left ">
+                                            
+                                        <div class="col-md-10">
+                                          <div class="card purple lighten-5">
+                                            <div class="card-body m-3">
+                                              <div class="row">
+                                                <div class="col-lg-4 d-flex mb-2 align-items-center">
+                                                  <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle img-fluid z-depth-1" alt="woman avatar">
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                  <p><label class="font-weight-bold lead">
+                                                    <strong>{{$annonce->user->name}} {{$annonce->user->prenom}}|</strong></label> <label class="ville font-weight-light"> Alger </label> </p>
+                                                  <p class="font-weight-bold text-muted mb-2">#{{ $annonce->catannonce->categorie}} </p> 
+                                                  <p class="text-muted font-weight-light mb-4">{{ $annonce->titre }}</p>
+
+                                                  <ul class="list-unstyled list-inline font-small">
+                    
+                                                    <li class="list-inline-item pr-2 white-text"><button type="button" class="btn btn-md btn-secondary font-weight-bold "><i class="fa fa-fist-raised pr-2"></i>N'riglek!</button></li>
+                                                    <li class="list-inline-item pr-2"><a href="#" class= "text-secondary"><i
+                                                      class="fa fa-fist-raised pr-1"></i>130</a></li>         
+                                                  </ul>                                          
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+
+                <!-- // couleur de la bande en fonction de l'urgence -->
+                                              <div class="card-footer color-block 
+                                                          @switch($annonce->urgence_id)
+                                                                @case('2')
+                                                                  red darken-4
+                                                                    @break
+                                                                @case('3')
+                                                                  orange darken-4
+                                                                    @break
+                                                                @case('4')
+                                                                  success-color-dark
+                                                                    @break
+                                                                @case('5')
+                                                                  secondary-color-dark
+                                                                    @break
+                                                                    
+                                                            @endswitch
+                                             text-center " >
+                                              <ul class="list-unstyled list-inline font-small">
+                                                  <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>{{$annonce->urgence->libele}}</li>
+                                                  <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : {{ $annonce->date_publication }}</li>  
+                                              </ul>
+                                            </div>
                                             
                                           </div>
                                         </div>
                                       </div>
-
-                                      <div class="card-footer color-block red darken-4 text-center " >
-                                        <ul class="list-unstyled list-inline font-small">
-                                            <li class="list-inline-item pr-2 white-text"><i class="fa fa-fire pr-1"></i>Trés urgent</li>
-                                            <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i> le : 05/04/2020</li>  
-                                        </ul>
-                                      </div>
                                       
-                                    </div>
-                                  </div>
-                                </div>
+                                  @endforeach
+                                    
 
                                 <div class="row d-flex justify-content-center m-3 text-left ">
                                     

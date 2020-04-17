@@ -37,13 +37,13 @@ Route::get('/register2', function () {
 
 })->name('index');*/
 
-Route::get('/demandes_annonces', function () {
-    return view('front-end.demandes_annonces');
-})->name('demandes_annonces');
+//Route::get('/demandes_annonces', function () { return view('front-end.annonces.demandes_annonces'); })->name('demandes_annonces');
 Route::get('/propositions_annonces', function () {
-    return view('front-end.propositions_annonces');
+    return view('front-end.annonces.propositions_annonces');
 })->name('propositions_annonces');
 
+// ANNONCES ROUTE
+Route::get('demandes_annonces', 'AnnonceController@index')->name('demandes_annonces');
 
 
 

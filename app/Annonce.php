@@ -10,19 +10,19 @@ class Annonce extends Model
 ];
 
 
-public function catannonces(){
+public function catannonce(){
         return $this->belongsTo('App\Catannonce');
     }
     
 
 
 
-public function users() 
+public function user() 
 {
     return $this->belongsTo('App\User');
 }
 
-public function urgences()
+public function urgence()
 {
     return $this->belongsTo('App\Urgence');
 }
