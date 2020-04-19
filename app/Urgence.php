@@ -10,7 +10,7 @@ class Urgence extends Model
         'libele', 'nbr_jr'];
 
     
-    public function annonces()
+    public function annonce()
     {
         return $this->hasMany('App\Annonce');
     }

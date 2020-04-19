@@ -9,15 +9,20 @@ class Ville extends Model
     //
 
     protected $fillable = [
-        'ville',
+        'ville','code_ville'
     ];
 
 
 
 
-    public function users(){
+    public function user(){
 
         return $this->hasMany('App\User');
+    }
+
+    public function commune(){
+
+        return $this->hasMany('App\Commune');
     }
 
 

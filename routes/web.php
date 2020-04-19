@@ -44,8 +44,10 @@ Route::get('/propositions_annonces', function () {
 
 // ANNONCES ROUTE
 Route::get('demandes_annonces', 'AnnonceController@index')->name('demandes_annonces');
+Route::post('demandes_annonces_filter', 'AnnonceController@filtre')->name('demandes_annonces_filtre');
 
-
+// Commune en fonction de la ville 
+Route::get('ville/communes/{id}', 'CommuneController@index');
 
 
 

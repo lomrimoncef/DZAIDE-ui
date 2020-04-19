@@ -13,7 +13,8 @@ $factory->define(Annonce::class, function (Faker $faker) {
         'date_publication' => $faker->date, 
         'publier' => '1',
         'catannonce_id' => rand(1,10),
-        'urgence_id' => rand(2,5),
+        'urgence_id' => rand(1,4),
         'user_id' => factory(App\User::class),
+        'commune_id' =>rand(1,1541),
     ];
 });

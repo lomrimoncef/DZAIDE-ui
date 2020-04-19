@@ -11,7 +11,7 @@ class Catannonce extends Model
         'categorie',
     ];
 
-    public function annonces(){
+    public function annonce(){
 
         return $this->hasMany('App\Annonce');
             }

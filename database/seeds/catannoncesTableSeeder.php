@@ -24,6 +24,7 @@ class catannoncesTableSeeder extends Seeder
             ['categorie'=>'transport'],
             ['categorie'=>'déménagement'],
             ['categorie'=>'cours'],
+            ['categorie'=>'lecture/livres'],
             ['categorie'=>'coaching'],
         
         ]);

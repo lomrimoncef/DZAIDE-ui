@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
                 'valider_par' => $faker->name,
             ]);}*/
 
-        //$this->call([UrgencesTableSeeder::class,catannoncesTableSeeder::class]);
+        $this->call([UrgencesTableSeeder::class,catannoncesTableSeeder::class]);
 
     }
 }
