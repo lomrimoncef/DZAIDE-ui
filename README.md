@@ -47,25 +47,6 @@ Want to help but don't know where to start? On DzAide, you can also offer your s
 <!-- TechStack -->
 
 
-<!-- Features -->
-## :dart: Features
-
-- [Features/Guest](#toolbox-getting-started)
-  * View Product](#bangbang-prerequisites)
-  * Register](#gear-installation)
-  * Add product to cart](#test_tube-running-tests)
-
-- [Features/Customer](#eyes-usage)
-  * Login](#bangbang-prerequisites)
-  * Add product to cart](#gear-installation)
-  * Checkout (No payment gateway implemented, all checkout status=PAID)](#test_tube-running-tests)
-  * View purchase history
- - [Features/Admin](#eyes-usage)
-   * Login to admin panel
-   * CRUD product
-   * Manage order
-   * View user
-   * Notes
 
 
 
