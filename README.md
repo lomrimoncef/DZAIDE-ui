@@ -9,7 +9,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <img src="albino/public/frontend/assets/imgs/theme/1.png" alt="logo" width="400" height="auto" />
+  <img src="./1.png" alt="logo" width="400" height="auto" />
 
   
 
