@@ -55,7 +55,7 @@ Want to help but don't know where to start? On DzAide, you can also offer your s
 
 
 
-- Clone the repository using the command "git clone (https://github.com/lomrimoncef/E-commerce-Bird-Shop.git)"
+- Clone the repository using the command "git clone"
 - Create database in MySql
 - Configure the .env file accordingly
 
