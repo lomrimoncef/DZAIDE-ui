@@ -1,78 +1,121 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# E-commerce-Bird-Shop
+<!--
+Hey, thanks for using the awesome-readme-template template.  
+If you have any enhancements, then fork this project and create a pull request 
+or just open an issue with the label "enhancement".
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Don't forget to give this project a star for additional support ;)
+Maybe you can mention me or this repo in the acknowledgements too
+-->
+<div align="center">
 
-## About Laravel
+  <img src="albino/public/frontend/assets/imgs/theme/logo dz ornithologie.png" alt="logo" width="400" height="auto" />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+   
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+</div>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<br />
 
-## Laravel Sponsors
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Table of Contents
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- [About the Project](##star2-about-the-project)
+  * Screenshots](#camera-screenshots)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+- [Features](##star2-about-the-project)
+  * View Product](#bangbang-prerequisites)
+  * Register](#gear-installation)
+  * Add product to cart](#test_tube-running-tests)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- [Installation](##star2-about-the-project)
+- [Built With](##star2-about-the-project)
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+  
 
-## Security Vulnerabilities
+<!-- About the Project -->
+## :star2: About the Project
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+<!-- Screenshots -->
+### :camera: Screenshots
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center"> 
+  <img src="2024-04-15 16_35_44-Admin Login.png" alt="screenshot" />
+  <img src="2024-04-15 16_37_01-Settings.png" alt="screenshot" />
+  <img src="2024-04-15 16_37_39-Settings.png" alt="screenshot" />
+  <img src="2024-04-15 16_37_52-Settings.png" alt="screenshot" />
+  <img src="2024-04-14 22_24_28-Pomada Tabernil.png" alt="screenshot" />
+    <img src="2024-04-15 16_29_07-.png" alt="screenshot" />
+    <img src="2024-04-15 16_29_58-Settings.png" alt="screenshot" />
+    <img src="2024-04-15 16_30_22-Supplements Category.png" alt="screenshot" />
+    <img src="2024-04-15 16_30_44-Dz-Ornithologie Shop.png" alt="screenshot" />
+   <img src="2024-04-15 16_33_35-MyCart Page.png" alt="screenshot" />
+   <img src="2024-04-15 16_34_36-Checkout Page.png" alt="screenshot" />
+
+</div>
+
+
+<!-- TechStack -->
+
+
+<!-- Features -->
+## :dart: Features
+
+- [Features/Guest](#toolbox-getting-started)
+  * View Product](#bangbang-prerequisites)
+  * Register](#gear-installation)
+  * Add product to cart](#test_tube-running-tests)
+
+- [Features/Customer](#eyes-usage)
+  * Login](#bangbang-prerequisites)
+  * Add product to cart](#gear-installation)
+  * Checkout (No payment gateway implemented, all checkout status=PAID)](#test_tube-running-tests)
+  * View purchase history
+ - [Features/Admin](#eyes-usage)
+   * Login to admin panel
+   * CRUD product
+   * Manage order
+   * View user
+   * Notes
+
+
+
+<!-- Getting Started -->
+## 	:gear: Installation
+
+
+
+- Clone the repository using the command "git clone (https://github.com/lomrimoncef/E-commerce-Bird-Shop.git)"
+- Create database in MySql
+- Configure the .env file accordingly
+
+
+
+
+
+
+Install  with composer
+
+```bash
+$composer install
+$php artisan migrate
+$php artisan serve
+$php artisan storage:link
+```
+   
+<!-- Running Tests -->
+## :test_tube: Built With
+
+- Bootstrap- CSS framework
+- JQuery- Javascript framework
+- Laravel - PHP framework
+- MySql- Databse
+
